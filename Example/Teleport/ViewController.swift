@@ -13,11 +13,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+		
+		self.title = "VC1"
     }
 
 	@IBAction func goto2(sender: AnyObject?) {
 		let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
-		delegate.navigate(.ViewController(ViewController2.self, child: nil))
+		delegate.navigate(
+			.NavigationController(
+				[
+					.ViewController(ViewController2.self, child: nil),
+					.ViewController(ViewController2.self, child: nil),
+				]
+			)
+		)
 	}
 }
 
