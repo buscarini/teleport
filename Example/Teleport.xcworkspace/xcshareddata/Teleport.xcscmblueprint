@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "07C3A43A9E63FC1A8959299293E434ECEE8A358A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "07C3A43A9E63FC1A8959299293E434ECEE8A358A" : 0,
+    "5A3A7F7A485A621C9109CC095218422619C56328" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "03338BA9-8C7A-456E-9646-5366F58CB39E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "07C3A43A9E63FC1A8959299293E434ECEE8A358A" : "teleport\/",
+    "5A3A7F7A485A621C9109CC095218422619C56328" : "miscel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Teleport",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/Teleport.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:buscarini\/teleport.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "07C3A43A9E63FC1A8959299293E434ECEE8A358A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/buscarini\/miscel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5A3A7F7A485A621C9109CC095218422619C56328"
+    }
+  ]
+}

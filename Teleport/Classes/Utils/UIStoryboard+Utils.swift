@@ -11,8 +11,8 @@ import UIKit
 import Miscel
 
 extension UIStoryboard {
-	public static func loadView(c: AnyClass) -> AnyClass? {
-		guard let view = UIStoryboard(name: TypeUtils.name(c), bundle: nil).instantiateInitialViewController() as? AnyClass else {
+	public static func loadView(c: AnyClass) -> UIViewController? {
+		guard let view = UIStoryboard(name: TypeUtils.name(c), bundle: nil).instantiateInitialViewController() else {
 			return nil
 		}
 		

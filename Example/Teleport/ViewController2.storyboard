@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KJt-Sk-KtY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller2-->
+        <scene sceneID="qA1-ME-IuQ">
+            <objects>
+                <viewController id="KJt-Sk-KtY" customClass="ViewController2" customModule="Teleport_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pLz-C1-fFK"/>
+                        <viewControllerLayoutGuide type="bottom" id="36W-Ke-t3m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFP-hX-oFi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpx-vt-gxQ">
+                                <rect key="frame" x="277" y="285" width="47" height="30"/>
+                                <state key="normal" title="Goto 1"/>
+                                <connections>
+                                    <action selector="goto1:" destination="KJt-Sk-KtY" eventType="touchUpInside" id="xVf-9l-div"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VC 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cd-Gz-OC7">
+                                <rect key="frame" x="283" y="256" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jpx-vt-gxQ" firstAttribute="centerY" secondItem="IFP-hX-oFi" secondAttribute="centerY" id="Gdg-2j-PlO"/>
+                            <constraint firstItem="Jpx-vt-gxQ" firstAttribute="centerX" secondItem="IFP-hX-oFi" secondAttribute="centerX" id="Gla-pU-Lvu"/>
+                            <constraint firstItem="6Cd-Gz-OC7" firstAttribute="centerX" secondItem="IFP-hX-oFi" secondAttribute="centerX" id="IWf-D3-Ynb"/>
+                            <constraint firstItem="Jpx-vt-gxQ" firstAttribute="top" secondItem="6Cd-Gz-OC7" secondAttribute="bottom" constant="8" id="Tlc-n2-9fK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bpu-vS-NGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="311"/>
+        </scene>
+    </scenes>
+</document>

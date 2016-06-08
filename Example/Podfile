@@ -2,8 +2,9 @@ use_frameworks!
 
 target 'Teleport_Example' do
 	pod 'Layitout', :git => 'https://github.com/buscarini/Layitout.git', :branch => 'master'
-	pod 'Miscel', :git => 'https://github.com/buscarini/Miscel.git', :branch => 'master'
-
+#	pod 'Miscel', :git => 'https://github.com/buscarini/Miscel.git', :branch => 'master'
+	pod 'Miscel', :path => '../../miscel'
+	
 	pod 'Teleport', :path => '../'
 
 	target 'Teleport_Tests' do

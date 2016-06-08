@@ -13,7 +13,11 @@ import Miscel
 public class NavigationComponent {
 	let window: UIWindow
 	
-	public var state: NavigationState
+	public var state: NavigationState {
+		didSet {
+			update(oldValue, state: state)
+		}
+	}
 
 	public init(window: UIWindow, initialState: NavigationState) {
 		self.window = window
@@ -29,6 +33,12 @@ public class NavigationComponent {
 	
 	func viewControllerForUpdate(current: UIViewController?, oldState: NavigationState, state: NavigationState) -> UIViewController? {
 		switch (oldState, state) {
+			case (_ , .Empty):
+				return nil
+		
+			case (.Empty, _):
+				return self.loadView(state)
+		
 			case (.ViewController(let c1, let child1), .ViewController(let c2, let child2)) where c1 != c2:
 				return self.loadView(state)
 			
@@ -64,7 +74,7 @@ public class NavigationComponent {
 	}
 	
 	func loadViewController(aClass: AnyClass) -> UIViewController {
-		return UIStoryboard.loadView(aClass)! as! UIViewController
+		return UIStoryboard.loadView(aClass)!
 	}
 }
 
