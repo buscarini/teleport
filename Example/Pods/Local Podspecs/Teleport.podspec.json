@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of Teleport.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/Teleport",
+  "homepage": "https://github.com/buscarini/teleport",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,19 @@
     "José Manuel": "buscarini@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Teleport.git",
+    "git": "https://github.com/buscarini/teleport.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Teleport/Classes/**/*"
+  "source_files": "Teleport/Classes/**/*",
+  "dependencies": {
+    "Layitout": [
+
+    ],
+    "Miscel": [
+
+    ]
+  }
 }

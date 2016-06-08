@@ -1,11 +1,12 @@
 use_frameworks!
 
 target 'Teleport_Example' do
-  pod 'Teleport', :path => '../'
+	pod 'Layitout', :git => 'https://github.com/buscarini/Layitout.git', :branch => 'master'
+	pod 'Miscel', :git => 'https://github.com/buscarini/Miscel.git', :branch => 'master'
 
-  target 'Teleport_Tests' do
-    inherit! :search_paths
+	pod 'Teleport', :path => '../'
 
-    
-  end
+	target 'Teleport_Tests' do
+		inherit! :search_paths
+	end
 end

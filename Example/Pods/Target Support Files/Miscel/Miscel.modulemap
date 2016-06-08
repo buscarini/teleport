@@ -1,0 +1,6 @@
+framework module Miscel {
+  umbrella header "Miscel-umbrella.h"
+
+  export *
+  module * { export * }
+}

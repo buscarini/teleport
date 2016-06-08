@@ -1,0 +1,25 @@
+{
+  "name": "Miscel",
+  "version": "0.1.8",
+  "summary": "Miscellaneous Swift Utilities",
+  "description": "Miscellaneous Swift Utilities",
+  "homepage": "https://github.com/buscarini/Miscel",
+  "license": "MIT",
+  "authors": {
+    "José Manuel": "buscarini@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/buscarini/Miscel.git",
+    "tag": "0.1.8"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "tvos": "9.0"
+  },
+  "source_files": "Miscel/Classes/**/*",
+  "dependencies": {
+    "Layitout": [
+
+    ]
+  }
+}

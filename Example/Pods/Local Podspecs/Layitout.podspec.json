@@ -1,0 +1,20 @@
+{
+  "name": "Layitout",
+  "version": "0.1.2",
+  "summary": "AutoLayout Swift Utils",
+  "description": "AutoLayout Swift Utils",
+  "homepage": "https://github.com/buscarini/Layitout",
+  "license": "MIT",
+  "authors": {
+    "José Manuel": "buscarini@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/buscarini/Layitout.git",
+    "tag": "0.1.2"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "tvos": "9.0"
+  },
+  "source_files": "Layitout/Classes/**/*"
+}

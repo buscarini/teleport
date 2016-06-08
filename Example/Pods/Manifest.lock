@@ -1,16 +1,39 @@
 PODS:
-  - Teleport (0.1.0)
+  - Layitout (0.1.2)
+  - Miscel (0.1.8):
+    - Layitout
+  - Teleport (0.1.0):
+    - Layitout
+    - Miscel
 
 DEPENDENCIES:
+  - Layitout (from `https://github.com/buscarini/Layitout.git`, branch `master`)
+  - Miscel (from `https://github.com/buscarini/Miscel.git`, branch `master`)
   - Teleport (from `../`)
 
 EXTERNAL SOURCES:
+  Layitout:
+    :branch: master
+    :git: https://github.com/buscarini/Layitout.git
+  Miscel:
+    :branch: master
+    :git: https://github.com/buscarini/Miscel.git
   Teleport:
     :path: ../
 
-SPEC CHECKSUMS:
-  Teleport: 16d1b79ea66067217ba75e540ff4a0a0ce4c7019
+CHECKOUT OPTIONS:
+  Layitout:
+    :commit: e5bd5955149e8e7008b2aa1b57c4d77ff74cc20a
+    :git: https://github.com/buscarini/Layitout.git
+  Miscel:
+    :commit: 3b60e84a4da0fbf1858f56fe9b1126c5faffaa45
+    :git: https://github.com/buscarini/Miscel.git
 
-PODFILE CHECKSUM: a1191ca6465cd2ab884704a3c5df39b4eef0a293
+SPEC CHECKSUMS:
+  Layitout: 8ab04d3f4d09b945fca1a55902b2a993376056b8
+  Miscel: 97e2add3ae619e7a9210ea56d00c657eed9678c9
+  Teleport: 3f1a35cf27a4819b8e6bfd9c503e0c5db09ad083
+
+PODFILE CHECKSUM: fe3e267901059a3ef82cdb07d88a9ee138ffecb7
 
 COCOAPODS: 1.0.0
