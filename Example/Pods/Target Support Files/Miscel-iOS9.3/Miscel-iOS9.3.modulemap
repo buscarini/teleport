@@ -1,5 +1,5 @@
 framework module Miscel {
-  umbrella header "Miscel-umbrella.h"
+  umbrella header "Miscel-iOS9.3-umbrella.h"
 
   export *
   module * { export * }

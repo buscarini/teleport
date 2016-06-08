@@ -7,214 +7,365 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0086B51D2DF16B23B43C1BEBDAC02B2C /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0164FF26BC22977B380FD2E781072827 /* Paths.swift */; };
-		0800065BD95EB0F280FB840772B7CB87 /* Teleport-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84847873A884D1B4D5CC3173BCFEB1E5 /* Teleport-dummy.m */; };
-		0F4FFDB1B9875B26E9935C51C788DD4B /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7F16679D90E5DAE3F8753D02FFB1C /* CGRect+Utils.swift */; };
-		20ECD4F1C27B873559A93C84DC617C88 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81AB861A7F79CC9AEC51A47C79355A4 /* String.swift */; };
-		21AE1EED00EA7BFF7E6A698685B021F6 /* Layitout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FE1628E8B72B408A1B65363471060F /* Layitout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		228F30E76022F33A49C79C2EC39A49FF /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DED3D02F813AFD6E1A4F51C0C610A /* Monoid.swift */; };
+		02591C4BCAC5046B779F80C7BF2EF14B /* Layitout-iOS9.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA0D96EC66B71AE0844A1D485918A63 /* Layitout-iOS9.3-dummy.m */; };
+		0457C57653FBB9337389FD74BE39A679 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C0CE7DD0D0A00E36024BF1BE7460D9 /* Writer.swift */; };
+		07D298EE6A5773A8530B0AA233873DCA /* Layitout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7CEC67C9118CA78A21A2B255A97DCA /* Layitout.framework */; };
+		090AD0FD3676A9EB596AFEF7A78B1982 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA13479DF2C1FCB0127EDAF1630FCB /* CALayer.swift */; };
+		0CD017FC95DB62B57821A0D06ADF840A /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2795BDF18DE81AAF67D33EC18DB5BA0 /* Functions.swift */; };
+		0FA7273783328867BB4ADDE0A5142B83 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFA5506EB765BB188F83BA5ED543B7 /* NSDate.swift */; };
+		0FF59AB48BE00DE77E51649E7CF092F7 /* UINib+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7256858A30E323C40DEC2D6CB3E0A47 /* UINib+Utils.swift */; };
+		11BDE98C2CF2F44191C6AC23662A5A35 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4D8DAB812D22CE82711F0B41EF12B6 /* GTMNSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		152FEE190D807B5A8FDDF7206B573F2D /* Layitout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7CEC67C9118CA78A21A2B255A97DCA /* Layitout.framework */; };
+		1781A9EAB40876F01CD3FA1CCB238EA1 /* Teleport-iOS9.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51D0BD7A1E5FE6FD60224E449BAB52 /* Teleport-iOS9.3-dummy.m */; };
+		18A56CBD4BBE3C21672DD8E2DB17F742 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD382CF4B6B831C06E9F2DBD60E44F /* NSString+HTML.m */; };
+		18FC523A1C181C2ACB628E104650E508 /* Layitout-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA1A09CC7E24B903D4C3C57430D839DA /* Layitout-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B6EC7AD72A70C95C074CF63B3B1FD3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
+		1C9D1B7B2CA21E243758FCE867895311 /* Miscel-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 391A714D02EEE3E221174C28A9EA3B09 /* Miscel-iOS8.3-dummy.m */; };
+		1DE8ACC4A9D8ECF4F189A6CD8679258B /* Teleport-iOS9.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA24238C2EE2DCB67E5876501C9F7B5 /* Teleport-iOS9.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F875FAEEA9C4B9864691A9549B82CF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
+		204D2A60B359526F9EB797A66ED82272 /* NSAttributedString+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2508567378AA5468FACE577F5F683F1D /* NSAttributedString+Utils.swift */; };
+		23234E4E8AD8C3EAF3D24304A17ECD7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
+		23EF49A557FD6B37995FFF2D5BE3FC62 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331ED54B378B93565C7CA4F3F00CDA5 /* Either.swift */; };
+		243B5925F5137FA161960C8D19D1A65C /* TypeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE260C5007F5AE8D73C9AF34C4DBC1 /* TypeUtils.swift */; };
+		2589B361532EAF8135C7A6D8E0DEE244 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763D27FC05E05ADAAD3270D68F02D33 /* NavigationComponent.swift */; };
+		297EE43B92559DC7C18DD7CAD2776CCB /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300C6883F833B760D964ED003A329B4 /* Array.swift */; };
 		29B0A57D9CB2A24428C21EC5ACB79CB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
-		34944AF79644C7C7D07E927A5E1E39CD /* Pods-Teleport_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3FAEA7D6993D105B2ED4BEDF9B9930 /* Pods-Teleport_Example-dummy.m */; };
-		365753C01685B0E340EF9DD345A023B4 /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC252C71B988FF1E0B0B18C18A0026F /* UINavigationController+Utils.swift */; };
-		36A768F1B9EE39C762B8EBDAAC59474B /* UINib+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501CABEB68E6D9574429D3964831F2E /* UINib+Utils.swift */; };
-		3E78F10BDFDE4B991B3BBEE8962A5B93 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5D1CFCDCF878A90D8EF401A7BD1E0 /* NSDate.swift */; };
-		44F24AF086EF239D0FC9B913D6C585A2 /* Miscel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFACA86C5450BBAE6FA537421AC213BB /* Miscel.framework */; };
-		489B6D1D5F7C019EE6AF9C6558B082FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
-		48B27FE77F7787C48473532C0386B0AC /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = C32B614C8F006DE2C47D4D1FB423152D /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49CA09E138A800CE42268A01018EDCE8 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D90985A122E7A1CB167ED4A37DE0AC /* UIView+Utils.swift */; };
-		49EC8D9D31A677BDE8BCB62BAA5583C2 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A34996AFE96C33EBD8CE41D641D97E /* GTMNSString+HTML.m */; };
-		4A403701D81498710139F76E7AD79D96 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E43BDCFB9C7B7AD91DAE9378A9E8EDD /* GTMNSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52A7FE7EAED43A0292D7F9D2B6155C58 /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A77D3DFA8333014606E04E5DF1EA0 /* UINavigationController+Utils.swift */; };
-		52E4F20E4A0146E0C9052237BBAE0C64 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9906BC5EE6FB61652BEB72837874075 /* Either.swift */; };
-		57857FEFB007E9D503BB0AC26A9F4EFA /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2A6076E34A4E02C071F6C199C28FF /* Reader.swift */; };
-		67A0001352395F8561456A337C710581 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001FC41C210B36EADCAA20D8B725378 /* CALayer.swift */; };
-		6872A8E921A3A535EA5E3B535BE79A48 /* UITableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DE3AC1F6CB095887C0827208C6DA9A /* UITableView+Utils.swift */; };
-		68B8E3BCEE6B73D480624393B3C3BB1D /* Array+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BDBE09AAA77D199C14B074E13A03D6 /* Array+Equatable.swift */; };
-		6BACEA9D7D83A24A3269ECD7B5729ED7 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C901CCF5C388E43B716DB402D03E40F /* NSString+HTML.m */; };
-		75C2D170A6DF9C9645E57972DF29C2BB /* UIBarButtonItem+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21D2D44B78420878A4D921DAE44B1CF /* UIBarButtonItem+Utils.swift */; };
-		799FA78A266F38CFD40EC2715A31DFE6 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BC53A67788B5FA6C347E310E08180 /* Functions.swift */; };
-		7AB025963BAD951599D2AE3959FA2FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
-		851C059AE72826E1B4CEA840FDEDA90E /* Layitout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7CEC67C9118CA78A21A2B255A97DCA /* Layitout.framework */; };
-		8B2050D53DDDA2CABCFBDB2A42FE42A5 /* AssignNotNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB571BB2D4957C93ADAE6A973F49794 /* AssignNotNil.swift */; };
-		94B16FEC105D2B6045B23A874BDCDB45 /* Folds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ECE5D20CA5120AA380A692801E35AF /* Folds.swift */; };
-		94FDFB0D54A66BFF62DB28DCCDB5552B /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BAB1F8442E69DFFB4647B86FC115FE /* NavigationComponent.swift */; };
-		9D0994B926899E226ED88635C1EE17ED /* UIFont+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84B431286B6A9D0DC70E8DC4F881CB /* UIFont+Utils.swift */; };
-		9F8EDF323FEF75EAF226167100BE1A7B /* Array+Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CF1BABCB2D28AFFF6C980B21E78E0C /* Array+Monoid.swift */; };
-		A5DC9AB2CF473BD2F3E3CA7B8C2A0BDC /* NSAttributedString+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE376BF188CDA68DA589F113D4AFED /* NSAttributedString+Utils.swift */; };
-		A634435633ADFEF3B6C6EDFD32D23F1A /* String+Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51499A7F24B1ADFF5DB82652F78A1694 /* String+Monoid.swift */; };
-		AFE3E32AE175AA5F449092112AC11862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
-		B291404323D0D2D5B773C4C8F8F09719 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6A0F0EA71C177775832D9076A7AFF /* NavigationState.swift */; };
-		B5115F4363997776670E4B042DE43620 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F22A216C0F68C5905EACDFA0C42162 /* Layout.swift */; };
-		BBDB017244915EE38CBBD421A9D9D894 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91C45CB35EB6338A5EA41C0EB1931A /* Array.swift */; };
-		C28108DA0F707C37D301A8AA1BF3C68B /* Teleport-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD916688F05E1D213B5332163CF87B4 /* Teleport-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C60B2C17F43B34EBABA301AE2C1EB002 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A65B5AFC4166A500CD01C7B51CDD2F /* Sum.swift */; };
-		C734AABA80DC16379A5B2E8DFE653D23 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4FF289AF217834EB5095708F830BF /* Writer.swift */; };
-		C93D2820A59F1817CE30A877EDA3550B /* TypeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13EFD24473390D4444F3DFB0F757A7 /* TypeUtils.swift */; };
-		C95BEBB1EC85B83D4205935136CEB5E6 /* Layitout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7CEC67C9118CA78A21A2B255A97DCA /* Layitout.framework */; };
-		CA70F53FC4ACD573CC4A8D865E81F1BC /* Boolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A0C393B787D589AF453CA8756AE6C /* Boolean.swift */; };
-		CDC703A15F5D956940CCAA845F5EB993 /* Pods-Teleport_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B640D2DB891FBE54F97BF72E71538580 /* Pods-Teleport_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1AECA639D45E17079F861524F3DDFC0 /* UIStoryboard+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB51F5C1BA91300E9DD89E77C4D87FCE /* UIStoryboard+Utils.swift */; };
-		D9AC29AD4B449D033BEDC95D139E2A6C /* Pods-Teleport_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BCC429F0EF47CB27E627E9AF5764D2 /* Pods-Teleport_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD614077C0B6950E8302997CBD7CBE82 /* Miscel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFEBE3E0D908A0E746BF1B71EF44D8B7 /* Miscel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF6F1E9BB66E55AD9EF66D5FE110D042 /* Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301C9F1BDA98FA3A33B77782896D2B37 /* Composition.swift */; };
-		EA5E61FA15104DFB6E9237AD487F0046 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
-		EBBF9B231B5514B12F2553FE74ED825A /* SequenceType+Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = B856D83C82E96888E123EFD29F949823 /* SequenceType+Take.swift */; };
-		EE3AFD9CC1B506B36E847A356E42E84D /* Pods-Teleport_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE17C240718A2F7790496691F29EF7D /* Pods-Teleport_Tests-dummy.m */; };
-		F1BB13C7C437F30873DF6AB680CB9EE0 /* Miscel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A05950605FB99462765897693B35A4FA /* Miscel-dummy.m */; };
-		F1DB128AFB757AA23A1A19917B78DE9B /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553D5C850077DFF5D0F66DE545790E2 /* UIView+Utils.swift */; };
-		FA640CD2FD7B4B5C908B6081F8553BCF /* Layitout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4898EB9DBBC014780FCA266F28786C94 /* Layitout-dummy.m */; };
+		2C332E70D4E784FD4629F30EBD7523FB /* Array+Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C5ED2B376A18931AB34CD522FD1AD /* Array+Monoid.swift */; };
+		2D747063A265ECBCDD725D5FF54DB63C /* Miscel-iOS9.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C2D0FC1BFCFCAC3FE10E264DB905A0 /* Miscel-iOS9.3-dummy.m */; };
+		2FD6394E0F6B37ACE40E8F13BEDB43EF /* Pods-Teleport_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1314C823316181319C1FAEB66A624E6E /* Pods-Teleport_Example-dummy.m */; };
+		315E2F008F95BDACB1BC32449CE1986B /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4081125CBD68797ACA59D96C783901 /* Reader.swift */; };
+		3BA7086C1A279CEEB6F7EABA1E91C82B /* Boolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B395AAFAF885EC71F60F61338E13E62 /* Boolean.swift */; };
+		3C535CD4C4278F0BCBE95CB9A9DAD3E1 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA28B7711DBA4714FB41CA9E4202651 /* UIView+Utils.swift */; };
+		3C668C41604F966C4AB383BC57481193 /* Layitout-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC948CB58FF0754C0BA93050382C5DA /* Layitout-iOS8.3-dummy.m */; };
+		3CC6063B23475757784F06AB7670CFAC /* SequenceType+Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B7240734B3030962B8ECA9F6920A3 /* SequenceType+Take.swift */; };
+		4138B40EA21507A5471B2AA691127384 /* SequenceType+Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B7240734B3030962B8ECA9F6920A3 /* SequenceType+Take.swift */; };
+		426C3C9491EDDA85CD9A092C5CE7B7FF /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA856650998CE0B9998F0BD48732897 /* Monoid.swift */; };
+		472718E9B8B38CBE53B0EB632BD3AABE /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FCAAD9A3DFB8CDABB472FEA52BAB6 /* Layout.swift */; };
+		492885F96306E7999379293DDBD5ABDB /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD382CF4B6B831C06E9F2DBD60E44F /* NSString+HTML.m */; };
+		4CCA895A2D855A3C9C38853980E0C241 /* Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277E3F2EA601007AB169B2783B635B5 /* Composition.swift */; };
+		4F5E114A90DC2E2D56C72645C66EF216 /* String+Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E742C74FE14F5E38A0C0004EA19254D3 /* String+Monoid.swift */; };
+		546A6C5074E6F44ADC101368D792D118 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DFA5506EB765BB188F83BA5ED543B7 /* NSDate.swift */; };
+		54724600659FCCE442C311C1BF4B9D52 /* UIBarButtonItem+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EE6ABE50E7927773B26BF8472E878 /* UIBarButtonItem+Utils.swift */; };
+		55A570AF82D7B9B361B56242221CFDC0 /* Boolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B395AAFAF885EC71F60F61338E13E62 /* Boolean.swift */; };
+		56412C410872AB7ABF06A81897F267D3 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6153862F01D0DD606666C623786BA5 /* UIView+Utils.swift */; };
+		568AA4181154B8BBE5C121F410E0F76A /* UINib+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7256858A30E323C40DEC2D6CB3E0A47 /* UINib+Utils.swift */; };
+		58CED9ECE66DFF91F66691EF8F3EEA65 /* Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277E3F2EA601007AB169B2783B635B5 /* Composition.swift */; };
+		5D7527B996959D2BD894800D274C9E58 /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E69C9E15E170B3686E6794B73E8B4 /* UINavigationController+Utils.swift */; };
+		62200847B04678A61FFD5D71C4AD3F7C /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 3334BC4D36BE3CAC83A8BF94E01E9564 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63293A9DDE38072D38DAA1616ECCE0E5 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA856650998CE0B9998F0BD48732897 /* Monoid.swift */; };
+		64B9FC2DAC407A68C85B4A67A925B4D7 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4081125CBD68797ACA59D96C783901 /* Reader.swift */; };
+		656CC93E24C1E5C84CAF34EA85AEA947 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0916BE85568204863E1E03FD29A1F /* String.swift */; };
+		68B2ACA42709855F2A080BE3EE4FD173 /* UIFont+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30DCF418CA83B24F31C26B36FFB19EE /* UIFont+Utils.swift */; };
+		6A428485CD74AEBED266155CC8599F62 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96FCAAD9A3DFB8CDABB472FEA52BAB6 /* Layout.swift */; };
+		72AB996818D951AFCC5B5E301D7E16B7 /* Pods-Teleport_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5614578893F861B547D78CFA2E4594FF /* Pods-Teleport_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		753F066C94CA6CCBF79AF66B121D3C0F /* Array+Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C5ED2B376A18931AB34CD522FD1AD /* Array+Monoid.swift */; };
+		75CA2EACCA5CB121B8AE1B9B097F3CF1 /* Layitout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7CEC67C9118CA78A21A2B255A97DCA /* Layitout.framework */; };
+		789BB703F16BE301F90601E9DE446DC7 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F21453CB92064B7E57B82C3016FEA0 /* NavigationState.swift */; };
+		7961A752A3A29726BAC8DAD35D51866D /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4D8DAB812D22CE82711F0B41EF12B6 /* GTMNSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A11F3A8C1F3823374C00B8B73211619 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
+		7A656D3EDE9D588FC977D39D2847B5E9 /* Miscel-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4E98566A520CD21D5ACA50F8653467 /* Miscel-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F375FB306D9C2B67A1834F07C8ADEF0 /* Miscel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFACA86C5450BBAE6FA537421AC213BB /* Miscel.framework */; };
+		8076CAB1E31C559A3425F6528CA6403C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2795BDF18DE81AAF67D33EC18DB5BA0 /* Functions.swift */; };
+		8187D1FD0C67BD4CAF3F20D8451A631F /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E69C9E15E170B3686E6794B73E8B4 /* UINavigationController+Utils.swift */; };
+		84175F0A109C41600D6D27E39F59E4BC /* Folds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA0BC4AEFF4405B9DDD952ADF5CC96B /* Folds.swift */; };
+		8A4B628E8824543F12DCD4B25044DCB9 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5943B6291916FD4F3E37B343E80F1F /* Paths.swift */; };
+		8EC99B0C380A20177FA1506268814960 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F21453CB92064B7E57B82C3016FEA0 /* NavigationState.swift */; };
+		8F84F99703C36B3B670E63EEB5AF1B46 /* Array+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F435787762B8E811E7049D406796452 /* Array+Equatable.swift */; };
+		8FB5DCA4C4EB6D5BC84A9380D024DB9D /* Pods-ModalExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 450C26756B1D44A6997BBA8C20293474 /* Pods-ModalExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		922F1F9E7744E5FEB9BAEC96F77F6B9E /* AssignNotNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F013901F83D346E6E2B1F6C8864303 /* AssignNotNil.swift */; };
+		9384EC5F2F2182F6F78662BB9EC5511C /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6153862F01D0DD606666C623786BA5 /* UIView+Utils.swift */; };
+		9832774CE83D3987D65893215AA95FD0 /* UITableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64AD823E7A0632C285FB76A278FFC7E /* UITableView+Utils.swift */; };
+		99332E30C4EDA6E546787745156C0539 /* Array+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F435787762B8E811E7049D406796452 /* Array+Equatable.swift */; };
+		A109863FB9BE05D4F5176064287593B6 /* Pods-ModalExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7236BA983DB90A5126D7E671CA13345 /* Pods-ModalExample-dummy.m */; };
+		AAE985F33C7B38EA28A4B88A9222A198 /* Miscel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFACA86C5450BBAE6FA537421AC213BB /* Miscel.framework */; };
+		AB9A9B7BF745BAC090BF5987F49340BD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0916BE85568204863E1E03FD29A1F /* String.swift */; };
+		AD2B04E51988EE6A85EBCB3A3BFEAE3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
+		AF34A6F4B871A8D68873830E894C98E0 /* Layitout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7CEC67C9118CA78A21A2B255A97DCA /* Layitout.framework */; };
+		B31FDCD16284AD83311A106C534FFCE8 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA13479DF2C1FCB0127EDAF1630FCB /* CALayer.swift */; };
+		B3D770EBB2BA1416B9B7B27BD466490B /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB6A6634B8005DCF3FB6A1C5B1DFD6E /* GTMNSString+HTML.m */; };
+		B58C5D045D3E13FF049656B84570F2A2 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5943B6291916FD4F3E37B343E80F1F /* Paths.swift */; };
+		B736841761633A072D206E7B69ED373C /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763D27FC05E05ADAAD3270D68F02D33 /* NavigationComponent.swift */; };
+		B7DE281D388C9E13D857FFC06FECC527 /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7366DD37A81483FDEA17F2699EA3EC58 /* UINavigationController+Utils.swift */; };
+		B81756C2C6CC8D8980E737CEBAE2A192 /* UIBarButtonItem+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1EE6ABE50E7927773B26BF8472E878 /* UIBarButtonItem+Utils.swift */; };
+		BB6922A16CBBD64F8663DCEF464B4481 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB6A6634B8005DCF3FB6A1C5B1DFD6E /* GTMNSString+HTML.m */; };
+		BBB90B78C6E183AF3D8CD2E38258CB08 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C4AF426A6F028A9609126E5B77633 /* Sum.swift */; };
+		BE4A94B90173BA1FC2E00C229AD0D41A /* UIStoryboard+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6030028B29240664565993D9C055F20F /* UIStoryboard+Utils.swift */; };
+		C69FB69158D347BDFF233B8677323533 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
+		C7C1E85DB870493963280FDC0F0E64F5 /* UIStoryboard+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6030028B29240664565993D9C055F20F /* UIStoryboard+Utils.swift */; };
+		CA1EF0DDD950210952DEC975292DE971 /* Teleport-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8748CBAF5FDAB93401251156E0FC778 /* Teleport-iOS8.3-dummy.m */; };
+		CB78D8892A4C349D89FB5EA3EB4C4BC4 /* Folds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA0BC4AEFF4405B9DDD952ADF5CC96B /* Folds.swift */; };
+		CE195DEBCC5DE8214455BCADB588FF02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
+		CE29613AA1FFF1AF25CCEED0595A54F0 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331ED54B378B93565C7CA4F3F00CDA5 /* Either.swift */; };
+		CFA9ABAAC53C600DAFC52F0FB0294339 /* Miscel-iOS9.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2541176BC97E56D77F24E2D56C70AA4F /* Miscel-iOS9.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D08BF03174BD0AB0DAED7BD3E5C193D6 /* TypeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE260C5007F5AE8D73C9AF34C4DBC1 /* TypeUtils.swift */; };
+		D32CB93C3BB696B5662BF076C815DC34 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300C6883F833B760D964ED003A329B4 /* Array.swift */; };
+		D996BB43B705D9F1EFCF7F53D4DAEDFE /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 3334BC4D36BE3CAC83A8BF94E01E9564 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9AC29AD4B449D033BEDC95D139E2A6C /* Pods-Teleport_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD85125532849ABC25B24970221BBDAA /* Pods-Teleport_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA7FF2C39A55B6A8FA414B5635FBC4F8 /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0BC560F753FA6D88AC6D7788DFFEE /* CGRect+Utils.swift */; };
+		DF74608E0E40F6F41F8D5607ECA34528 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C0CE7DD0D0A00E36024BF1BE7460D9 /* Writer.swift */; };
+		E1DABC7927A13BAE830FDA1DAD6AD7F8 /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D0BC560F753FA6D88AC6D7788DFFEE /* CGRect+Utils.swift */; };
+		E323DE0AE7CA48BC4AAE83E909157D29 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA28B7711DBA4714FB41CA9E4202651 /* UIView+Utils.swift */; };
+		E98EC23CDEA196193E2D843B7F122E85 /* Teleport-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4793A0DAF54350C22F060B8EEE0049C /* Teleport-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EADCA42FD664A41988C431B5FB4D52B5 /* Layitout-iOS9.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E183D03815BCFB974868CFF20DD5AC15 /* Layitout-iOS9.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC0DD75CF4275333D738A9643F8050E3 /* AssignNotNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F013901F83D346E6E2B1F6C8864303 /* AssignNotNil.swift */; };
+		EDCCF132435E651AF8F8AA95E2D739C6 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C4AF426A6F028A9609126E5B77633 /* Sum.swift */; };
+		EE3AFD9CC1B506B36E847A356E42E84D /* Pods-Teleport_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FFE6F8CBA8ED1BA1F73A201EE961D6 /* Pods-Teleport_Tests-dummy.m */; };
+		F05B1D815D8DE9BA9A26F1A8F584FA08 /* NSAttributedString+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2508567378AA5468FACE577F5F683F1D /* NSAttributedString+Utils.swift */; };
+		F63947E5582D5551ED01166ECB5E5833 /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7366DD37A81483FDEA17F2699EA3EC58 /* UINavigationController+Utils.swift */; };
+		F942C9B4F047652BA95DD4C8C3D70A03 /* String+Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E742C74FE14F5E38A0C0004EA19254D3 /* String+Monoid.swift */; };
+		FB0A542498CC4A9A34E087DFF536AAFF /* UIFont+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30DCF418CA83B24F31C26B36FFB19EE /* UIFont+Utils.swift */; };
+		FB959ECBAA6518028BA2A265D2B4A8AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */; };
+		FBE893EF05254D6251F22DB2FD535BAF /* UITableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64AD823E7A0632C285FB76A278FFC7E /* UITableView+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3ADAF683171DEFD0FBA354FF9AEC5167 /* PBXContainerItemProxy */ = {
+		21A88430D65512F6FE2C25892793C3ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F18097C9D256C93AD7AF018BF7B47468;
-			remoteInfo = Layitout;
+			remoteGlobalIDString = C1763241745D77E45D3AF7D64D7104E2;
+			remoteInfo = "Teleport-iOS8.3";
 		};
-		6F3ACFD6C3EFF3A184B21533D23BB961 /* PBXContainerItemProxy */ = {
+		3283989B5D0D776ADC0D9DBBDA84B2F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 300C40639F547FA26666697A1118AA72;
-			remoteInfo = Miscel;
+			remoteGlobalIDString = 9A6BDC071F592F7D02B3572F21EA4A8B;
+			remoteInfo = "Miscel-iOS8.3";
 		};
-		9EF0ED925FD51B2DA4D2253CDCAE6268 /* PBXContainerItemProxy */ = {
+		54F651FE2A989713E10B06C5C59012B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F18097C9D256C93AD7AF018BF7B47468;
-			remoteInfo = Layitout;
+			remoteGlobalIDString = A0F2D8E64432006C90888647C59793D3;
+			remoteInfo = "Layitout-iOS9.3";
 		};
-		C4F2CBFC2247BFB12CB34D9ABEB990AB /* PBXContainerItemProxy */ = {
+		716DCE9A92B5C256D5B5D3E7ACC9EB2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1ACCE165A83EA644BE31F9E9E322B93F;
-			remoteInfo = Teleport;
+			remoteGlobalIDString = 6153CED8C474F563AA5D1E444E821E4C;
+			remoteInfo = "Layitout-iOS8.3";
 		};
-		CA38378B943D3747288AEA304154DAE3 /* PBXContainerItemProxy */ = {
+		8ABD7942C78BA6C747D7B93DF33C71F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F18097C9D256C93AD7AF018BF7B47468;
-			remoteInfo = Layitout;
+			remoteGlobalIDString = 9BEA2435E19F9B7B5B46D6634B62B441;
+			remoteInfo = "Teleport-iOS9.3";
 		};
-		D6C0DBC6D9975CFFB103EC23A48684DE /* PBXContainerItemProxy */ = {
+		9183B90B433F166F8A410E4D9AFE5680 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 300C40639F547FA26666697A1118AA72;
-			remoteInfo = Miscel;
+			remoteGlobalIDString = 827E53246FA779F30B8B374D46F4B2AB;
+			remoteInfo = "Miscel-iOS9.3";
+		};
+		9C816EA043BE109EF0368477DEF8D10F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 827E53246FA779F30B8B374D46F4B2AB;
+			remoteInfo = "Miscel-iOS9.3";
+		};
+		9DA6819CBF4621003A9FE144C07E0B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0F2D8E64432006C90888647C59793D3;
+			remoteInfo = "Layitout-iOS9.3";
+		};
+		B7E6317C3759AC5A0516310D82BD5916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 827E53246FA779F30B8B374D46F4B2AB;
+			remoteInfo = "Miscel-iOS9.3";
+		};
+		CDD077792B86B17A20A49FF521CC4B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0F2D8E64432006C90888647C59793D3;
+			remoteInfo = "Layitout-iOS9.3";
+		};
+		CEA781C090DD9DC296B48B2FA09B7D69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0F2D8E64432006C90888647C59793D3;
+			remoteInfo = "Layitout-iOS9.3";
+		};
+		FB9ABF1FD365DCABC841CD5E9DAD6E2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0F2D8E64432006C90888647C59793D3;
+			remoteInfo = "Layitout-iOS9.3";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002DFEA5781AD95DA1A973AB14A8DAB3 /* Pods-Teleport_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0164FF26BC22977B380FD2E781072827 /* Paths.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
-		02501163D989A0391B51233A8FE27A4F /* Pods-Teleport_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Teleport_Tests.modulemap"; sourceTree = "<group>"; };
-		0AE17C240718A2F7790496691F29EF7D /* Pods-Teleport_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Teleport_Tests-dummy.m"; sourceTree = "<group>"; };
-		0BC252C71B988FF1E0B0B18C18A0026F /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
-		19C770947089764FD1C1AEA42C891A6A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FD916688F05E1D213B5332163CF87B4 /* Teleport-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Teleport-umbrella.h"; sourceTree = "<group>"; };
-		2A8A4CDC68B0A0795AE49E16F8D2CAC6 /* Pods_Teleport_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B782E20A31207F711EF6A47654F367C /* Pods_Teleport_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F21453CB92064B7E57B82C3016FEA0 /* NavigationState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		086C5ED2B376A18931AB34CD522FD1AD /* Array+Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Monoid.swift"; sourceTree = "<group>"; };
+		0F3BBD6E79112E0927408F6E80D23801 /* Miscel-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Miscel-iOS8.3.modulemap"; sourceTree = "<group>"; };
+		1314C823316181319C1FAEB66A624E6E /* Pods-Teleport_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Teleport_Example-dummy.m"; sourceTree = "<group>"; };
+		16674FABDB8702FEB8B00F2FA5498B3D /* Miscel-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Miscel-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
+		1AA8967EAB24A207803C616E8291AB42 /* Miscel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miscel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9E69C9E15E170B3686E6794B73E8B4 /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
+		1BE0916BE85568204863E1E03FD29A1F /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		1C4081125CBD68797ACA59D96C783901 /* Reader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		1C4D83CF58C239B61CFD365143EBB7B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Teleport-iOS9.3/Info.plist"; sourceTree = "<group>"; };
+		1DA0BC4AEFF4405B9DDD952ADF5CC96B /* Folds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Folds.swift; sourceTree = "<group>"; };
+		1E4E98566A520CD21D5ACA50F8653467 /* Miscel-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Miscel-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
+		1F20A56B12D44203AC812CCA20E64F7F /* Miscel-iOS9.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Miscel-iOS9.3-prefix.pch"; path = "../Miscel-iOS9.3/Miscel-iOS9.3-prefix.pch"; sourceTree = "<group>"; };
+		213D32DF36C16FE32A35325531B2D758 /* Pods-Teleport_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Teleport_Example-resources.sh"; sourceTree = "<group>"; };
+		24D0BC560F753FA6D88AC6D7788DFFEE /* CGRect+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Utils.swift"; sourceTree = "<group>"; };
+		2508567378AA5468FACE577F5F683F1D /* NSAttributedString+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Utils.swift"; sourceTree = "<group>"; };
+		2541176BC97E56D77F24E2D56C70AA4F /* Miscel-iOS9.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Miscel-iOS9.3-umbrella.h"; path = "../Miscel-iOS9.3/Miscel-iOS9.3-umbrella.h"; sourceTree = "<group>"; };
+		26C0CE7DD0D0A00E36024BF1BE7460D9 /* Writer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
+		29430B586B6AE2FCC638A5476A4AB861 /* Pods-Teleport_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Teleport_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2ACA13479DF2C1FCB0127EDAF1630FCB /* CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		2B7CEC67C9118CA78A21A2B255A97DCA /* Layitout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Layitout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C901CCF5C388E43B716DB402D03E40F /* NSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
-		2DA00431BB67A66BF0D59987C18504B9 /* Miscel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Miscel-prefix.pch"; sourceTree = "<group>"; };
-		301C9F1BDA98FA3A33B77782896D2B37 /* Composition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Composition.swift; sourceTree = "<group>"; };
-		320E04F98278C7F5A265FA6BFFCB1772 /* Pods-Teleport_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Teleport_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		42876161A20D359DD0E269FCAE736DC2 /* Miscel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Miscel.xcconfig; sourceTree = "<group>"; };
-		449BC53A67788B5FA6C347E310E08180 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		4898EB9DBBC014780FCA266F28786C94 /* Layitout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Layitout-dummy.m"; sourceTree = "<group>"; };
-		49A809D30B410D5184744227C95BA714 /* Pods-Teleport_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Teleport_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		4A6197381D9A348FA9F89462EFEDEC8F /* Layitout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Layitout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B0D3AA947EBCCEAFCC89A17B287019B /* Teleport-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Teleport-prefix.pch"; sourceTree = "<group>"; };
-		4C07A9BFD03469EB04C85065CB66BE90 /* Pods-Teleport_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Teleport_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4D84B431286B6A9D0DC70E8DC4F881CB /* UIFont+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Utils.swift"; sourceTree = "<group>"; };
-		4E43BDCFB9C7B7AD91DAE9378A9E8EDD /* GTMNSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
-		51499A7F24B1ADFF5DB82652F78A1694 /* String+Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Monoid.swift"; sourceTree = "<group>"; };
-		514A77D3DFA8333014606E04E5DF1EA0 /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
-		51ECE5D20CA5120AA380A692801E35AF /* Folds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Folds.swift; sourceTree = "<group>"; };
-		5543694D44B2DB5F2EACBE54828958A1 /* Pods-Teleport_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5A07014431D9013217DE0007D6F7CA1A /* Miscel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miscel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C13EFD24473390D4444F3DFB0F757A7 /* TypeUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TypeUtils.swift; sourceTree = "<group>"; };
-		5D326190FEAB50BC41C17CBEBD9BEF73 /* Pods-Teleport_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Teleport_Tests-resources.sh"; sourceTree = "<group>"; };
+		2EA28B7711DBA4714FB41CA9E4202651 /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		3040FE1A4493EAC0628ECB8411FED6F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		313C7C023FC2AD1BD27253634ECA0538 /* Layitout-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Layitout-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
+		31E8DAB3F597C6AC518A37007FB5CC82 /* Miscel-iOS9.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Miscel-iOS9.3.modulemap"; path = "../Miscel-iOS9.3/Miscel-iOS9.3.modulemap"; sourceTree = "<group>"; };
+		3334BC4D36BE3CAC83A8BF94E01E9564 /* NSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		370701CE74829F4F41441FC3300F4C9E /* Pods-Teleport_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Teleport_Tests.modulemap"; sourceTree = "<group>"; };
+		3763D27FC05E05ADAAD3270D68F02D33 /* NavigationComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
+		386AD453BB01EE053013CC5D6DB748B9 /* Pods-Teleport_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		391A714D02EEE3E221174C28A9EA3B09 /* Miscel-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Miscel-iOS8.3-dummy.m"; sourceTree = "<group>"; };
+		3998E57DEBBB9B16E8519C7B0DACF48D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B1EE6ABE50E7927773B26BF8472E878 /* UIBarButtonItem+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Utils.swift"; sourceTree = "<group>"; };
+		3CC948CB58FF0754C0BA93050382C5DA /* Layitout-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Layitout-iOS8.3-dummy.m"; sourceTree = "<group>"; };
+		3E32AAD9E8351A879D0D77E7850ADB40 /* Pods-Teleport_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Teleport_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E672C963285A24FD503416D186EC19A /* Pods-Teleport_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Teleport_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EF3006FECE8B1A03333CDFFFCE73787 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450C26756B1D44A6997BBA8C20293474 /* Pods-ModalExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModalExample-umbrella.h"; sourceTree = "<group>"; };
+		46F9463BDA56FF40F8EF68AB6AD290C7 /* Pods-ModalExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ModalExample.modulemap"; sourceTree = "<group>"; };
+		490D4E3172BEE803E077E1E89DD2FBA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Miscel-iOS9.3/Info.plist"; sourceTree = "<group>"; };
+		5277E3F2EA601007AB169B2783B635B5 /* Composition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Composition.swift; sourceTree = "<group>"; };
+		5331ED54B378B93565C7CA4F3F00CDA5 /* Either.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		5614578893F861B547D78CFA2E4594FF /* Pods-Teleport_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Teleport_Example-umbrella.h"; sourceTree = "<group>"; };
+		56C2D0FC1BFCFCAC3FE10E264DB905A0 /* Miscel-iOS9.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Miscel-iOS9.3-dummy.m"; path = "../Miscel-iOS9.3/Miscel-iOS9.3-dummy.m"; sourceTree = "<group>"; };
+		58DFA5506EB765BB188F83BA5ED543B7 /* NSDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		5C3E159E57CBCF3C4AC777A31019C3F3 /* Teleport-iOS9.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Teleport-iOS9.3.xcconfig"; path = "../Teleport-iOS9.3/Teleport-iOS9.3.xcconfig"; sourceTree = "<group>"; };
+		5CA856650998CE0B9998F0BD48732897 /* Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
 		5DFC4A833BDE36D020E4FBBF2461E104 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6501CABEB68E6D9574429D3964831F2E /* UINib+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINib+Utils.swift"; sourceTree = "<group>"; };
-		69037C31A38E0051DFF6FF54439FF864 /* Teleport.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Teleport.xcconfig; sourceTree = "<group>"; };
-		69D90985A122E7A1CB167ED4A37DE0AC /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Utils.swift"; path = "Layitout/Classes/UIView+Utils.swift"; sourceTree = "<group>"; };
-		6F3FAEA7D6993D105B2ED4BEDF9B9930 /* Pods-Teleport_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Teleport_Example-dummy.m"; sourceTree = "<group>"; };
-		72A65B5AFC4166A500CD01C7B51CDD2F /* Sum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
-		7553D5C850077DFF5D0F66DE545790E2 /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
-		7650C120658C059A9EB3A791F634F961 /* Layitout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Layitout.xcconfig; sourceTree = "<group>"; };
-		7C174FD22E877F2D2FABDD6EC569E8ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E91DE676F12255A01C43E9269D2E83C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81A34996AFE96C33EBD8CE41D641D97E /* GTMNSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
-		823DED3D02F813AFD6E1A4F51C0C610A /* Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
-		84847873A884D1B4D5CC3173BCFEB1E5 /* Teleport-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Teleport-dummy.m"; sourceTree = "<group>"; };
-		8AA6A0F0EA71C177775832D9076A7AFF /* NavigationState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
-		8D95A51B09B83F3428F87A878AEFCC67 /* Pods-Teleport_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5F435787762B8E811E7049D406796452 /* Array+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Equatable.swift"; sourceTree = "<group>"; };
+		5FFBE23E0C5C4CD87C1E2D5EB67A2969 /* Miscel-iOS9.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Miscel-iOS9.3.xcconfig"; path = "../Miscel-iOS9.3/Miscel-iOS9.3.xcconfig"; sourceTree = "<group>"; };
+		6030028B29240664565993D9C055F20F /* UIStoryboard+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Utils.swift"; sourceTree = "<group>"; };
+		676518E066B6400B1E3C57580EB9E1B8 /* Layitout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Layitout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B395AAFAF885EC71F60F61338E13E62 /* Boolean.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Boolean.swift; sourceTree = "<group>"; };
+		6C7000CB7439E26DF53C5B7DE8689532 /* Pods-ModalExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModalExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		6CFF45570C93678A3ECC33010694B060 /* Teleport-iOS9.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Teleport-iOS9.3.modulemap"; path = "../Teleport-iOS9.3/Teleport-iOS9.3.modulemap"; sourceTree = "<group>"; };
+		7366DD37A81483FDEA17F2699EA3EC58 /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
+		74CCFEAD88D0E47AB9A16AF3E8B6FD7D /* Pods-Teleport_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Teleport_Example.modulemap"; sourceTree = "<group>"; };
+		78237472C5D108C69342B3713284FF68 /* Teleport-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Teleport-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
+		78F013901F83D346E6E2B1F6C8864303 /* AssignNotNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssignNotNil.swift; sourceTree = "<group>"; };
+		7DA24238C2EE2DCB67E5876501C9F7B5 /* Teleport-iOS9.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Teleport-iOS9.3-umbrella.h"; path = "../Teleport-iOS9.3/Teleport-iOS9.3-umbrella.h"; sourceTree = "<group>"; };
+		7FBCF85BE7A50FDC824404F1759936EF /* Pods_Teleport_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801C7F357D4A12930470593AB17CAABB /* Layitout-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Layitout-iOS8.3.modulemap"; sourceTree = "<group>"; };
+		8300C6883F833B760D964ED003A329B4 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		83133E2AF5D927E56DC7A854A15A12D1 /* Teleport-iOS9.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Teleport-iOS9.3-prefix.pch"; path = "../Teleport-iOS9.3/Teleport-iOS9.3-prefix.pch"; sourceTree = "<group>"; };
+		884514B82B1E9D48EFBB20BB6ED310AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A2E26B6BECA63538FD37A115F4E2AD7 /* Pods-ModalExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModalExample.release.xcconfig"; sourceTree = "<group>"; };
+		8E877EBFB3C7737E5665AA768E117C8A /* Teleport-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Teleport-iOS8.3.modulemap"; sourceTree = "<group>"; };
+		92DFAA98D35FD95714D60FBD7E6B01E6 /* Pods-Teleport_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Example.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93BDBE09AAA77D199C14B074E13A03D6 /* Array+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Equatable.swift"; sourceTree = "<group>"; };
-		A001FC41C210B36EADCAA20D8B725378 /* CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
-		A05950605FB99462765897693B35A4FA /* Miscel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Miscel-dummy.m"; sourceTree = "<group>"; };
-		AA91C45CB35EB6338A5EA41C0EB1931A /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		AFEBE3E0D908A0E746BF1B71EF44D8B7 /* Miscel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Miscel-umbrella.h"; sourceTree = "<group>"; };
-		B5F22A216C0F68C5905EACDFA0C42162 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Layitout/Classes/Layout.swift; sourceTree = "<group>"; };
-		B640D2DB891FBE54F97BF72E71538580 /* Pods-Teleport_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Teleport_Example-umbrella.h"; sourceTree = "<group>"; };
-		B856D83C82E96888E123EFD29F949823 /* SequenceType+Take.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SequenceType+Take.swift"; sourceTree = "<group>"; };
-		B8CF1BABCB2D28AFFF6C980B21E78E0C /* Array+Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Monoid.swift"; sourceTree = "<group>"; };
-		BCA7F16679D90E5DAE3F8753D02FFB1C /* CGRect+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Utils.swift"; sourceTree = "<group>"; };
-		BE9564AEC03822D7CA8FCC62B28EFCBB /* Pods-Teleport_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Teleport_Example-resources.sh"; sourceTree = "<group>"; };
+		9C6153862F01D0DD606666C623786BA5 /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Utils.swift"; path = "Layitout/Classes/UIView+Utils.swift"; sourceTree = "<group>"; };
+		9CD5869D95C467C6D6A8F195D2BF46D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4D8DAB812D22CE82711F0B41EF12B6 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		A158AAE9F1F38B10847E3D07E9C379E7 /* Pods-Teleport_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Teleport_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A1DB0B90E70845AB626567129E3C7260 /* Pods-Teleport_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A7236BA983DB90A5126D7E671CA13345 /* Pods-ModalExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModalExample-dummy.m"; sourceTree = "<group>"; };
+		AA1E93EA9FCFC55836C590CA34186C52 /* Layitout-iOS9.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Layitout-iOS9.3-prefix.pch"; path = "../Layitout-iOS9.3/Layitout-iOS9.3-prefix.pch"; sourceTree = "<group>"; };
+		AC1229B551B1D1904EC6031652ECDC2B /* Layitout-iOS9.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Layitout-iOS9.3.modulemap"; path = "../Layitout-iOS9.3/Layitout-iOS9.3.modulemap"; sourceTree = "<group>"; };
+		AE88A55CF6E04435A5BEDDE749A33F39 /* Miscel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miscel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2795BDF18DE81AAF67D33EC18DB5BA0 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		B3774023E1B63E10997FBC10BB3035BE /* Pods-Teleport_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B4793A0DAF54350C22F060B8EEE0049C /* Teleport-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Teleport-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
+		B51DE8362EEDB6FB7B2129D909F3AE74 /* Pods-ModalExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModalExample-frameworks.sh"; sourceTree = "<group>"; };
+		B64AD823E7A0632C285FB76A278FFC7E /* UITableView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
+		B6DE80F803AB21EA57984E24980B5054 /* Pods-ModalExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModalExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B96FCAAD9A3DFB8CDABB472FEA52BAB6 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Layitout/Classes/Layout.swift; sourceTree = "<group>"; };
+		BF5943B6291916FD4F3E37B343E80F1F /* Paths.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		BFACA86C5450BBAE6FA537421AC213BB /* Miscel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Miscel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C211F6E9BB0B78B697EBC3351D5DD613 /* Teleport.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Teleport.modulemap; sourceTree = "<group>"; };
-		C32B614C8F006DE2C47D4D1FB423152D /* NSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
-		C3DE376BF188CDA68DA589F113D4AFED /* NSAttributedString+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Utils.swift"; sourceTree = "<group>"; };
-		C3F11864ADE7E9BD40A66AA9BF3A3BAC /* Pods-Teleport_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Teleport_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C5BCC429F0EF47CB27E627E9AF5764D2 /* Pods-Teleport_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Teleport_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C68A0C393B787D589AF453CA8756AE6C /* Boolean.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Boolean.swift; sourceTree = "<group>"; };
-		C7DE3AC1F6CB095887C0827208C6DA9A /* UITableView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
-		C9906BC5EE6FB61652BEB72837874075 /* Either.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
-		CA87AC987951697354810228F897BBA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF0B5957DCDE791D97926ADFCC934AD3 /* Layitout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Layitout.modulemap; sourceTree = "<group>"; };
-		D1C5D1CFCDCF878A90D8EF401A7BD1E0 /* NSDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
-		D21D2D44B78420878A4D921DAE44B1CF /* UIBarButtonItem+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Utils.swift"; sourceTree = "<group>"; };
-		D325483693860B060554C014F5B2257A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D81AB861A7F79CC9AEC51A47C79355A4 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		DB51F5C1BA91300E9DD89E77C4D87FCE /* UIStoryboard+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Utils.swift"; sourceTree = "<group>"; };
-		DB9AF0D42EABCA1820EB92567A175954 /* Pods-Teleport_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Teleport_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DBC3D26D3CDD220AE5E7ADBA6851B548 /* Pods-Teleport_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Teleport_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E2F2A6076E34A4E02C071F6C199C28FF /* Reader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
-		E6A782261E490B845AD7BECA8B8E9134 /* Miscel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Miscel.modulemap; sourceTree = "<group>"; };
-		EA442F3E9861431A21F70253E5BDDCC6 /* Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA515E85BB00770F0AE7DB8B21969529 /* Pods-Teleport_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EE713C463A40FF9ED061478CDCE70467 /* Layitout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Layitout-prefix.pch"; sourceTree = "<group>"; };
-		EEA4FF289AF217834EB5095708F830BF /* Writer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
-		F2B3F6496C7494B63CAF304359CEBA2F /* Pods-Teleport_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Teleport_Example.modulemap"; sourceTree = "<group>"; };
-		F4FE1628E8B72B408A1B65363471060F /* Layitout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Layitout-umbrella.h"; sourceTree = "<group>"; };
-		F5BAB1F8442E69DFFB4647B86FC115FE /* NavigationComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
-		FAB571BB2D4957C93ADAE6A973F49794 /* AssignNotNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssignNotNil.swift; sourceTree = "<group>"; };
+		C7A86DCA30EE1AEB908E1FD54E68324C /* Pods-Teleport_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Teleport_Tests-resources.sh"; sourceTree = "<group>"; };
+		C8CE260C5007F5AE8D73C9AF34C4DBC1 /* TypeUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TypeUtils.swift; sourceTree = "<group>"; };
+		C9304BD6E384AED2E0283A95023683AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB6A6634B8005DCF3FB6A1C5B1DFD6E /* GTMNSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		CBE8EE0028CF86C50100B10356A03E31 /* Layitout-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Layitout-iOS8.3.xcconfig"; sourceTree = "<group>"; };
+		CD85125532849ABC25B24970221BBDAA /* Pods-Teleport_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Teleport_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D15BD18134BF876AC2A2861F81D205CE /* Pods-Teleport_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Teleport_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1A0D5C8B6DA2A59ACAEF8426D1F2160 /* Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FFE6F8CBA8ED1BA1F73A201EE961D6 /* Pods-Teleport_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Teleport_Tests-dummy.m"; sourceTree = "<group>"; };
+		D30DCF418CA83B24F31C26B36FFB19EE /* UIFont+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Utils.swift"; sourceTree = "<group>"; };
+		D695A6D0255DF9502FECF16E08C1127E /* Teleport-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Teleport-iOS8.3.xcconfig"; sourceTree = "<group>"; };
+		D6AFAEC9BFC0C5BFCBC1175D9D51CC7C /* Layitout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Layitout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79B7240734B3030962B8ECA9F6920A3 /* SequenceType+Take.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SequenceType+Take.swift"; sourceTree = "<group>"; };
+		DB6C959CD46043161D72A27A2CEBE730 /* Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDD382CF4B6B831C06E9F2DBD60E44F /* NSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		E0A5ECCA9E46694558056D6882908BA4 /* Pods_Teleport_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E183D03815BCFB974868CFF20DD5AC15 /* Layitout-iOS9.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Layitout-iOS9.3-umbrella.h"; path = "../Layitout-iOS9.3/Layitout-iOS9.3-umbrella.h"; sourceTree = "<group>"; };
+		E497AE970324451FAFA3FF57420A7009 /* Pods-Teleport_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Teleport_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E742C74FE14F5E38A0C0004EA19254D3 /* String+Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Monoid.swift"; sourceTree = "<group>"; };
+		E88B0A2706DBCE4BE7DE0A154116CF31 /* Pods-ModalExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModalExample-resources.sh"; sourceTree = "<group>"; };
+		EA1A09CC7E24B903D4C3C57430D839DA /* Layitout-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Layitout-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
+		EBF634F374367C1547C0376EED4346D0 /* Layitout-iOS9.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Layitout-iOS9.3.xcconfig"; path = "../Layitout-iOS9.3/Layitout-iOS9.3.xcconfig"; sourceTree = "<group>"; };
+		F19E6114CFF0C180FC20E2B181EA7477 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Layitout-iOS9.3/Info.plist"; sourceTree = "<group>"; };
+		F446EB8191824F765F8F35D0067AFB54 /* Miscel-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Miscel-iOS8.3.xcconfig"; sourceTree = "<group>"; };
+		F4A476BD28ADC0C0FCF4817BD6DAD91E /* Pods_ModalExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModalExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7256858A30E323C40DEC2D6CB3E0A47 /* UINib+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINib+Utils.swift"; sourceTree = "<group>"; };
+		F75FDB5937BA584A59AD65EC88221BDA /* Pods-ModalExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModalExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F8748CBAF5FDAB93401251156E0FC778 /* Teleport-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Teleport-iOS8.3-dummy.m"; sourceTree = "<group>"; };
+		FA51D0BD7A1E5FE6FD60224E449BAB52 /* Teleport-iOS9.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Teleport-iOS9.3-dummy.m"; path = "../Teleport-iOS9.3/Teleport-iOS9.3-dummy.m"; sourceTree = "<group>"; };
+		FB2C4AF426A6F028A9609126E5B77633 /* Sum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Sum.swift; sourceTree = "<group>"; };
+		FDA0D96EC66B71AE0844A1D485918A63 /* Layitout-iOS9.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Layitout-iOS9.3-dummy.m"; path = "../Layitout-iOS9.3/Layitout-iOS9.3-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25634A0EB490CE1BE127D77A0F8675AE /* Frameworks */ = {
+		20FF68D401935D31D15B73D96EEE5BFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE3E32AE175AA5F449092112AC11862 /* Foundation.framework in Frameworks */,
-				851C059AE72826E1B4CEA840FDEDA90E /* Layitout.framework in Frameworks */,
+				1F875FAEEA9C4B9864691A9549B82CF5 /* Foundation.framework in Frameworks */,
+				75CA2EACCA5CB121B8AE1B9B097F3CF1 /* Layitout.framework in Frameworks */,
+				AAE985F33C7B38EA28A4B88A9222A198 /* Miscel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CEDF931A295EBC998FD4BEC60C2F41A /* Frameworks */ = {
+		2B787F52524BB4731BFE8E818F3D2E1F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB025963BAD951599D2AE3959FA2FCE /* Foundation.framework in Frameworks */,
-				C95BEBB1EC85B83D4205935136CEB5E6 /* Layitout.framework in Frameworks */,
-				44F24AF086EF239D0FC9B913D6C585A2 /* Miscel.framework in Frameworks */,
+				7A11F3A8C1F3823374C00B8B73211619 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CFA33A97D8EB15FEB09501F05B5362D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2B04E51988EE6A85EBCB3A3BFEAE3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31448A530EB705CC1C8ED2521751DF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23234E4E8AD8C3EAF3D24304A17ECD7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6348CA284F2049BC32A62C5E3ED16452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE195DEBCC5DE8214455BCADB588FF02 /* Foundation.framework in Frameworks */,
+				07D298EE6A5773A8530B0AA233873DCA /* Layitout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,89 +377,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65DB55193901618C197502045B77D303 /* Frameworks */ = {
+		83E04D65847315B613ED7E64BBF1AFD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5E61FA15104DFB6E9237AD487F0046 /* Foundation.framework in Frameworks */,
+				1B6EC7AD72A70C95C074CF63B3B1FD3B /* Foundation.framework in Frameworks */,
+				AF34A6F4B871A8D68873830E894C98E0 /* Layitout.framework in Frameworks */,
+				7F375FB306D9C2B67A1834F07C8ADEF0 /* Miscel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6805CAFC2FB74C00A6464296785BD6F /* Frameworks */ = {
+		A032CD674FBAC8321A9CDF14E2761761 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				489B6D1D5F7C019EE6AF9C6558B082FC /* Foundation.framework in Frameworks */,
+				C69FB69158D347BDFF233B8677323533 /* Foundation.framework in Frameworks */,
+				152FEE190D807B5A8FDDF7206B573F2D /* Layitout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22D720F9189D5FCE052D40E203EA2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB959ECBAA6518028BA2A265D2B4A8AD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		098F7FBD213C75855A852DB5D73019B0 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				78F013901F83D346E6E2B1F6C8864303 /* AssignNotNil.swift */,
+			);
+			path = Operators;
+			sourceTree = "<group>";
+		};
 		1116F9BC0FC71D26CDDF6D9B0802DCA1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F77AF06805418231B201A8AEE99B4DDB /* Layitout */,
+				7536FBE32433977DDCBA44AA9676A233 /* Layitout */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		12105CD6B4BF25B3E1B62F61574390F2 /* Utils */ = {
+		23B918C236565C34B37E159631DDA8DB /* Monoids */ = {
 			isa = PBXGroup;
 			children = (
-				AA91C45CB35EB6338A5EA41C0EB1931A /* Array.swift */,
-				0164FF26BC22977B380FD2E781072827 /* Paths.swift */,
-				5C13EFD24473390D4444F3DFB0F757A7 /* TypeUtils.swift */,
-				57352315370033DA19D822E87B99B858 /* MWFeedParser */,
+				086C5ED2B376A18931AB34CD522FD1AD /* Array+Monoid.swift */,
+				5CA856650998CE0B9998F0BD48732897 /* Monoid.swift */,
+				E742C74FE14F5E38A0C0004EA19254D3 /* String+Monoid.swift */,
+				FB2C4AF426A6F028A9609126E5B77633 /* Sum.swift */,
 			);
-			path = Utils;
+			path = Monoids;
 			sourceTree = "<group>";
 		};
-		12B856071BB5C0B75B479DE47C2D4C54 /* Products */ = {
+		298FD115457969C4A477ED241200DC03 /* Teleport */ = {
 			isa = PBXGroup;
 			children = (
-				4A6197381D9A348FA9F89462EFEDEC8F /* Layitout.framework */,
-				5A07014431D9013217DE0007D6F7CA1A /* Miscel.framework */,
-				2A8A4CDC68B0A0795AE49E16F8D2CAC6 /* Pods_Teleport_Example.framework */,
-				2B782E20A31207F711EF6A47654F367C /* Pods_Teleport_Tests.framework */,
-				EA442F3E9861431A21F70253E5BDDCC6 /* Teleport.framework */,
+				51EAA3DD816D809D212173CD4A48B353 /* Support Files */,
+				D60DA5F72C052E2E7BEA0A33CEBAA6B4 /* Teleport */,
+			);
+			name = Teleport;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2B20AAC14E798F1E95104465AB2DB480 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6AFAEC9BFC0C5BFCBC1175D9D51CC7C /* Layitout.framework */,
+				676518E066B6400B1E3C57580EB9E1B8 /* Layitout.framework */,
+				1AA8967EAB24A207803C616E8291AB42 /* Miscel.framework */,
+				AE88A55CF6E04435A5BEDDE749A33F39 /* Miscel.framework */,
+				F4A476BD28ADC0C0FCF4817BD6DAD91E /* Pods_ModalExample.framework */,
+				E0A5ECCA9E46694558056D6882908BA4 /* Pods_Teleport_Example.framework */,
+				7FBCF85BE7A50FDC824404F1759936EF /* Pods_Teleport_Tests.framework */,
+				D1A0D5C8B6DA2A59ACAEF8426D1F2160 /* Teleport.framework */,
+				DB6C959CD46043161D72A27A2CEBE730 /* Teleport.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		176FE0DF68AE15EF96C8F8C34BD2C699 /* Functions */ = {
+		2BE2E4218256BF731B252A0A37942A3D /* Pods-Teleport_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C68A0C393B787D589AF453CA8756AE6C /* Boolean.swift */,
-				301C9F1BDA98FA3A33B77782896D2B37 /* Composition.swift */,
-				449BC53A67788B5FA6C347E310E08180 /* Functions.swift */,
+				9CD5869D95C467C6D6A8F195D2BF46D8 /* Info.plist */,
+				370701CE74829F4F41441FC3300F4C9E /* Pods-Teleport_Tests.modulemap */,
+				3E672C963285A24FD503416D186EC19A /* Pods-Teleport_Tests-acknowledgements.markdown */,
+				A158AAE9F1F38B10847E3D07E9C379E7 /* Pods-Teleport_Tests-acknowledgements.plist */,
+				D1FFE6F8CBA8ED1BA1F73A201EE961D6 /* Pods-Teleport_Tests-dummy.m */,
+				E497AE970324451FAFA3FF57420A7009 /* Pods-Teleport_Tests-frameworks.sh */,
+				C7A86DCA30EE1AEB908E1FD54E68324C /* Pods-Teleport_Tests-resources.sh */,
+				CD85125532849ABC25B24970221BBDAA /* Pods-Teleport_Tests-umbrella.h */,
+				386AD453BB01EE053013CC5D6DB748B9 /* Pods-Teleport_Tests.debug.xcconfig */,
+				B3774023E1B63E10997FBC10BB3035BE /* Pods-Teleport_Tests.release.xcconfig */,
 			);
-			path = Functions;
-			sourceTree = "<group>";
-		};
-		26C0C196118A3A5082C0E7FF1F48086E /* Pods-Teleport_Example */ = {
-			isa = PBXGroup;
-			children = (
-				7C174FD22E877F2D2FABDD6EC569E8ED /* Info.plist */,
-				F2B3F6496C7494B63CAF304359CEBA2F /* Pods-Teleport_Example.modulemap */,
-				4C07A9BFD03469EB04C85065CB66BE90 /* Pods-Teleport_Example-acknowledgements.markdown */,
-				C3F11864ADE7E9BD40A66AA9BF3A3BAC /* Pods-Teleport_Example-acknowledgements.plist */,
-				6F3FAEA7D6993D105B2ED4BEDF9B9930 /* Pods-Teleport_Example-dummy.m */,
-				DBC3D26D3CDD220AE5E7ADBA6851B548 /* Pods-Teleport_Example-frameworks.sh */,
-				BE9564AEC03822D7CA8FCC62B28EFCBB /* Pods-Teleport_Example-resources.sh */,
-				B640D2DB891FBE54F97BF72E71538580 /* Pods-Teleport_Example-umbrella.h */,
-				EA515E85BB00770F0AE7DB8B21969529 /* Pods-Teleport_Example.debug.xcconfig */,
-				8D95A51B09B83F3428F87A878AEFCC67 /* Pods-Teleport_Example.release.xcconfig */,
-			);
-			name = "Pods-Teleport_Example";
-			path = "Target Support Files/Pods-Teleport_Example";
+			name = "Pods-Teleport_Tests";
+			path = "Target Support Files/Pods-Teleport_Tests";
 			sourceTree = "<group>";
 		};
 		30A0FFE882A12D628EBFCCB757CF9C8B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BE396EF2F55E34797FD0989C7EF69405 /* Miscel */,
-				FCFBB9DAD7F6A1C792174A43CB56BFF7 /* Teleport */,
+				D5530C5B88E7E9B9A344D35A32BBE184 /* Miscel */,
+				298FD115457969C4A477ED241200DC03 /* Teleport */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -323,6 +497,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3496CC679E45BBC1FBFA623BE5DC4CBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5F435787762B8E811E7049D406796452 /* Array+Equatable.swift */,
+				2ACA13479DF2C1FCB0127EDAF1630FCB /* CALayer.swift */,
+				1DA0BC4AEFF4405B9DDD952ADF5CC96B /* Folds.swift */,
+				2508567378AA5468FACE577F5F683F1D /* NSAttributedString+Utils.swift */,
+				58DFA5506EB765BB188F83BA5ED543B7 /* NSDate.swift */,
+				D79B7240734B3030962B8ECA9F6920A3 /* SequenceType+Take.swift */,
+				1BE0916BE85568204863E1E03FD29A1F /* String.swift */,
+				9D4F667C7453A8339D4965F9BDCDDA0F /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		395329BBD139857E9BF35341D0FE8197 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,74 +520,82 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		3E73989BBBE70EC9A83B4133433D8B9F /* Targets Support Files */ = {
+		442DB2F220A191E8E6104F3DCEC35A0A /* Pods-ModalExample */ = {
 			isa = PBXGroup;
 			children = (
-				26C0C196118A3A5082C0E7FF1F48086E /* Pods-Teleport_Example */,
-				C1AC82D2E200FD9676E5E34050BB4139 /* Pods-Teleport_Tests */,
+				3EF3006FECE8B1A03333CDFFFCE73787 /* Info.plist */,
+				46F9463BDA56FF40F8EF68AB6AD290C7 /* Pods-ModalExample.modulemap */,
+				B6DE80F803AB21EA57984E24980B5054 /* Pods-ModalExample-acknowledgements.markdown */,
+				6C7000CB7439E26DF53C5B7DE8689532 /* Pods-ModalExample-acknowledgements.plist */,
+				A7236BA983DB90A5126D7E671CA13345 /* Pods-ModalExample-dummy.m */,
+				B51DE8362EEDB6FB7B2129D909F3AE74 /* Pods-ModalExample-frameworks.sh */,
+				E88B0A2706DBCE4BE7DE0A154116CF31 /* Pods-ModalExample-resources.sh */,
+				450C26756B1D44A6997BBA8C20293474 /* Pods-ModalExample-umbrella.h */,
+				F75FDB5937BA584A59AD65EC88221BDA /* Pods-ModalExample.debug.xcconfig */,
+				8A2E26B6BECA63538FD37A115F4E2AD7 /* Pods-ModalExample.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-ModalExample";
+			path = "Target Support Files/Pods-ModalExample";
 			sourceTree = "<group>";
 		};
-		57352315370033DA19D822E87B99B858 /* MWFeedParser */ = {
+		4DB92B1DBC957BC526FB9C8DEDF5748A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4E43BDCFB9C7B7AD91DAE9378A9E8EDD /* GTMNSString+HTML.h */,
-				81A34996AFE96C33EBD8CE41D641D97E /* GTMNSString+HTML.m */,
-				C32B614C8F006DE2C47D4D1FB423152D /* NSString+HTML.h */,
-				2C901CCF5C388E43B716DB402D03E40F /* NSString+HTML.m */,
+				F19E6114CFF0C180FC20E2B181EA7477 /* Info.plist */,
+				C9304BD6E384AED2E0283A95023683AC /* Info.plist */,
+				801C7F357D4A12930470593AB17CAABB /* Layitout-iOS8.3.modulemap */,
+				CBE8EE0028CF86C50100B10356A03E31 /* Layitout-iOS8.3.xcconfig */,
+				3CC948CB58FF0754C0BA93050382C5DA /* Layitout-iOS8.3-dummy.m */,
+				313C7C023FC2AD1BD27253634ECA0538 /* Layitout-iOS8.3-prefix.pch */,
+				EA1A09CC7E24B903D4C3C57430D839DA /* Layitout-iOS8.3-umbrella.h */,
+				AC1229B551B1D1904EC6031652ECDC2B /* Layitout-iOS9.3.modulemap */,
+				EBF634F374367C1547C0376EED4346D0 /* Layitout-iOS9.3.xcconfig */,
+				FDA0D96EC66B71AE0844A1D485918A63 /* Layitout-iOS9.3-dummy.m */,
+				AA1E93EA9FCFC55836C590CA34186C52 /* Layitout-iOS9.3-prefix.pch */,
+				E183D03815BCFB974868CFF20DD5AC15 /* Layitout-iOS9.3-umbrella.h */,
 			);
-			path = MWFeedParser;
+			name = "Support Files";
+			path = "../Target Support Files/Layitout-iOS8.3";
 			sourceTree = "<group>";
 		};
-		578C3EE1D787AC23282F1624FE790073 /* Miscel */ = {
+		51EAA3DD816D809D212173CD4A48B353 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A7FF655722AD90D39C3E5D223DE83CA3 /* Classes */,
+				1C4D83CF58C239B61CFD365143EBB7B8 /* Info.plist */,
+				3040FE1A4493EAC0628ECB8411FED6F5 /* Info.plist */,
+				8E877EBFB3C7737E5665AA768E117C8A /* Teleport-iOS8.3.modulemap */,
+				D695A6D0255DF9502FECF16E08C1127E /* Teleport-iOS8.3.xcconfig */,
+				F8748CBAF5FDAB93401251156E0FC778 /* Teleport-iOS8.3-dummy.m */,
+				78237472C5D108C69342B3713284FF68 /* Teleport-iOS8.3-prefix.pch */,
+				B4793A0DAF54350C22F060B8EEE0049C /* Teleport-iOS8.3-umbrella.h */,
+				6CFF45570C93678A3ECC33010694B060 /* Teleport-iOS9.3.modulemap */,
+				5C3E159E57CBCF3C4AC777A31019C3F3 /* Teleport-iOS9.3.xcconfig */,
+				FA51D0BD7A1E5FE6FD60224E449BAB52 /* Teleport-iOS9.3-dummy.m */,
+				83133E2AF5D927E56DC7A854A15A12D1 /* Teleport-iOS9.3-prefix.pch */,
+				7DA24238C2EE2DCB67E5876501C9F7B5 /* Teleport-iOS9.3-umbrella.h */,
 			);
-			path = Miscel;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Teleport-iOS8.3";
 			sourceTree = "<group>";
 		};
-		58BC854BE0F03C5C3FAC1880D9A587B8 /* Utils */ = {
+		6FC514E84F8B57C1C327755BCC6A42DC /* Monads */ = {
 			isa = PBXGroup;
 			children = (
-				0BC252C71B988FF1E0B0B18C18A0026F /* UINavigationController+Utils.swift */,
-				DB51F5C1BA91300E9DD89E77C4D87FCE /* UIStoryboard+Utils.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		6176B4100947B7D0B228EFF61B5FBA19 /* Operators */ = {
-			isa = PBXGroup;
-			children = (
-				FAB571BB2D4957C93ADAE6A973F49794 /* AssignNotNil.swift */,
-			);
-			path = Operators;
-			sourceTree = "<group>";
-		};
-		6425A74B733952485CC15BB4E86A93E9 /* Monads */ = {
-			isa = PBXGroup;
-			children = (
-				C9906BC5EE6FB61652BEB72837874075 /* Either.swift */,
-				E2F2A6076E34A4E02C071F6C199C28FF /* Reader.swift */,
-				EEA4FF289AF217834EB5095708F830BF /* Writer.swift */,
+				5331ED54B378B93565C7CA4F3F00CDA5 /* Either.swift */,
+				1C4081125CBD68797ACA59D96C783901 /* Reader.swift */,
+				26C0CE7DD0D0A00E36024BF1BE7460D9 /* Writer.swift */,
 			);
 			path = Monads;
 			sourceTree = "<group>";
 		};
-		72721208026A42908C962ED72A944948 /* Extensions */ = {
+		7536FBE32433977DDCBA44AA9676A233 /* Layitout */ = {
 			isa = PBXGroup;
 			children = (
-				93BDBE09AAA77D199C14B074E13A03D6 /* Array+Equatable.swift */,
-				A001FC41C210B36EADCAA20D8B725378 /* CALayer.swift */,
-				51ECE5D20CA5120AA380A692801E35AF /* Folds.swift */,
-				C3DE376BF188CDA68DA589F113D4AFED /* NSAttributedString+Utils.swift */,
-				D1C5D1CFCDCF878A90D8EF401A7BD1E0 /* NSDate.swift */,
-				B856D83C82E96888E123EFD29F949823 /* SequenceType+Take.swift */,
-				D81AB861A7F79CC9AEC51A47C79355A4 /* String.swift */,
-				F4A24DA6665D562967A80DFE669AB2AA /* UIKit */,
+				B96FCAAD9A3DFB8CDABB472FEA52BAB6 /* Layout.swift */,
+				9C6153862F01D0DD606666C623786BA5 /* UIView+Utils.swift */,
+				4DB92B1DBC957BC526FB9C8DEDF5748A /* Support Files */,
 			);
-			path = Extensions;
+			path = Layitout;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -408,175 +605,215 @@
 				30A0FFE882A12D628EBFCCB757CF9C8B /* Development Pods */,
 				30D7A1B9081587D14C787A94B6DC8049 /* Frameworks */,
 				1116F9BC0FC71D26CDDF6D9B0802DCA1 /* Pods */,
-				12B856071BB5C0B75B479DE47C2D4C54 /* Products */,
-				3E73989BBBE70EC9A83B4133433D8B9F /* Targets Support Files */,
+				2B20AAC14E798F1E95104465AB2DB480 /* Products */,
+				EC4951D62B68C6F04FF292879C074678 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82B8133412DCF6198A7F35D01B486A1D /* Support Files */ = {
+		8024756B6E5CBAB793A62FBC47656DBB /* MWFeedParser */ = {
 			isa = PBXGroup;
 			children = (
-				7E91DE676F12255A01C43E9269D2E83C /* Info.plist */,
-				E6A782261E490B845AD7BECA8B8E9134 /* Miscel.modulemap */,
-				42876161A20D359DD0E269FCAE736DC2 /* Miscel.xcconfig */,
-				A05950605FB99462765897693B35A4FA /* Miscel-dummy.m */,
-				2DA00431BB67A66BF0D59987C18504B9 /* Miscel-prefix.pch */,
-				AFEBE3E0D908A0E746BF1B71EF44D8B7 /* Miscel-umbrella.h */,
+				9F4D8DAB812D22CE82711F0B41EF12B6 /* GTMNSString+HTML.h */,
+				CAB6A6634B8005DCF3FB6A1C5B1DFD6E /* GTMNSString+HTML.m */,
+				3334BC4D36BE3CAC83A8BF94E01E9564 /* NSString+HTML.h */,
+				DDDD382CF4B6B831C06E9F2DBD60E44F /* NSString+HTML.m */,
 			);
-			name = "Support Files";
-			path = "../teleport/Example/Pods/Target Support Files/Miscel";
+			path = MWFeedParser;
 			sourceTree = "<group>";
 		};
-		94F674F410D513CC35CE1976A3D4F5DB /* Classes */ = {
+		8FD01E9E53171CB85D41A49C9919A636 /* Pods-Teleport_Example */ = {
 			isa = PBXGroup;
 			children = (
-				F5BAB1F8442E69DFFB4647B86FC115FE /* NavigationComponent.swift */,
-				8AA6A0F0EA71C177775832D9076A7AFF /* NavigationState.swift */,
-				58BC854BE0F03C5C3FAC1880D9A587B8 /* Utils */,
+				3998E57DEBBB9B16E8519C7B0DACF48D /* Info.plist */,
+				74CCFEAD88D0E47AB9A16AF3E8B6FD7D /* Pods-Teleport_Example.modulemap */,
+				D15BD18134BF876AC2A2861F81D205CE /* Pods-Teleport_Example-acknowledgements.markdown */,
+				3E32AAD9E8351A879D0D77E7850ADB40 /* Pods-Teleport_Example-acknowledgements.plist */,
+				1314C823316181319C1FAEB66A624E6E /* Pods-Teleport_Example-dummy.m */,
+				29430B586B6AE2FCC638A5476A4AB861 /* Pods-Teleport_Example-frameworks.sh */,
+				213D32DF36C16FE32A35325531B2D758 /* Pods-Teleport_Example-resources.sh */,
+				5614578893F861B547D78CFA2E4594FF /* Pods-Teleport_Example-umbrella.h */,
+				A1DB0B90E70845AB626567129E3C7260 /* Pods-Teleport_Example.debug.xcconfig */,
+				92DFAA98D35FD95714D60FBD7E6B01E6 /* Pods-Teleport_Example.release.xcconfig */,
 			);
-			path = Classes;
+			name = "Pods-Teleport_Example";
+			path = "Target Support Files/Pods-Teleport_Example";
 			sourceTree = "<group>";
 		};
-		9DDA4B9A0E3EBCD116296CEF436E2DD5 /* Support Files */ = {
+		95909F117D1BFAACB3685A1386D447A6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				19C770947089764FD1C1AEA42C891A6A /* Info.plist */,
-				C211F6E9BB0B78B697EBC3351D5DD613 /* Teleport.modulemap */,
-				69037C31A38E0051DFF6FF54439FF864 /* Teleport.xcconfig */,
-				84847873A884D1B4D5CC3173BCFEB1E5 /* Teleport-dummy.m */,
-				4B0D3AA947EBCCEAFCC89A17B287019B /* Teleport-prefix.pch */,
-				1FD916688F05E1D213B5332163CF87B4 /* Teleport-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Teleport";
-			sourceTree = "<group>";
-		};
-		A6A98B237AA26DDD38C964FCB814C60A /* Monoids */ = {
-			isa = PBXGroup;
-			children = (
-				B8CF1BABCB2D28AFFF6C980B21E78E0C /* Array+Monoid.swift */,
-				823DED3D02F813AFD6E1A4F51C0C610A /* Monoid.swift */,
-				51499A7F24B1ADFF5DB82652F78A1694 /* String+Monoid.swift */,
-				72A65B5AFC4166A500CD01C7B51CDD2F /* Sum.swift */,
-			);
-			path = Monoids;
-			sourceTree = "<group>";
-		};
-		A7FF655722AD90D39C3E5D223DE83CA3 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				72721208026A42908C962ED72A944948 /* Extensions */,
-				176FE0DF68AE15EF96C8F8C34BD2C699 /* Functions */,
-				6425A74B733952485CC15BB4E86A93E9 /* Monads */,
-				A6A98B237AA26DDD38C964FCB814C60A /* Monoids */,
-				6176B4100947B7D0B228EFF61B5FBA19 /* Operators */,
-				12105CD6B4BF25B3E1B62F61574390F2 /* Utils */,
+				3496CC679E45BBC1FBFA623BE5DC4CBD /* Extensions */,
+				9B87961DBDCA6A68FE2B34CDF956DDB4 /* Functions */,
+				6FC514E84F8B57C1C327755BCC6A42DC /* Monads */,
+				23B918C236565C34B37E159631DDA8DB /* Monoids */,
+				098F7FBD213C75855A852DB5D73019B0 /* Operators */,
+				AA48201D971E25D44A3D503E82BF48C1 /* Utils */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		BA999D096569D9B64BDC6BA75F412FB7 /* Support Files */ = {
+		9B87961DBDCA6A68FE2B34CDF956DDB4 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				CA87AC987951697354810228F897BBA2 /* Info.plist */,
-				CF0B5957DCDE791D97926ADFCC934AD3 /* Layitout.modulemap */,
-				7650C120658C059A9EB3A791F634F961 /* Layitout.xcconfig */,
-				4898EB9DBBC014780FCA266F28786C94 /* Layitout-dummy.m */,
-				EE713C463A40FF9ED061478CDCE70467 /* Layitout-prefix.pch */,
-				F4FE1628E8B72B408A1B65363471060F /* Layitout-umbrella.h */,
+				6B395AAFAF885EC71F60F61338E13E62 /* Boolean.swift */,
+				5277E3F2EA601007AB169B2783B635B5 /* Composition.swift */,
+				B2795BDF18DE81AAF67D33EC18DB5BA0 /* Functions.swift */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Layitout";
+			path = Functions;
 			sourceTree = "<group>";
 		};
-		BE396EF2F55E34797FD0989C7EF69405 /* Miscel */ = {
+		9D4F667C7453A8339D4965F9BDCDDA0F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				578C3EE1D787AC23282F1624FE790073 /* Miscel */,
-				82B8133412DCF6198A7F35D01B486A1D /* Support Files */,
+				24D0BC560F753FA6D88AC6D7788DFFEE /* CGRect+Utils.swift */,
+				3B1EE6ABE50E7927773B26BF8472E878 /* UIBarButtonItem+Utils.swift */,
+				D30DCF418CA83B24F31C26B36FFB19EE /* UIFont+Utils.swift */,
+				7366DD37A81483FDEA17F2699EA3EC58 /* UINavigationController+Utils.swift */,
+				F7256858A30E323C40DEC2D6CB3E0A47 /* UINib+Utils.swift */,
+				B64AD823E7A0632C285FB76A278FFC7E /* UITableView+Utils.swift */,
+				2EA28B7711DBA4714FB41CA9E4202651 /* UIView+Utils.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AA48201D971E25D44A3D503E82BF48C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8300C6883F833B760D964ED003A329B4 /* Array.swift */,
+				BF5943B6291916FD4F3E37B343E80F1F /* Paths.swift */,
+				C8CE260C5007F5AE8D73C9AF34C4DBC1 /* TypeUtils.swift */,
+				8024756B6E5CBAB793A62FBC47656DBB /* MWFeedParser */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B74B00FC3AEA1D5EA51BFEEA2D306877 /* Miscel */ = {
+			isa = PBXGroup;
+			children = (
+				95909F117D1BFAACB3685A1386D447A6 /* Classes */,
+			);
+			path = Miscel;
+			sourceTree = "<group>";
+		};
+		D5530C5B88E7E9B9A344D35A32BBE184 /* Miscel */ = {
+			isa = PBXGroup;
+			children = (
+				B74B00FC3AEA1D5EA51BFEEA2D306877 /* Miscel */,
+				DBCE43F6E95662352745C744FA5CE0F9 /* Support Files */,
 			);
 			name = Miscel;
 			path = ../../../miscel;
 			sourceTree = "<group>";
 		};
-		C1AC82D2E200FD9676E5E34050BB4139 /* Pods-Teleport_Tests */ = {
+		D60DA5F72C052E2E7BEA0A33CEBAA6B4 /* Teleport */ = {
 			isa = PBXGroup;
 			children = (
-				D325483693860B060554C014F5B2257A /* Info.plist */,
-				02501163D989A0391B51233A8FE27A4F /* Pods-Teleport_Tests.modulemap */,
-				DB9AF0D42EABCA1820EB92567A175954 /* Pods-Teleport_Tests-acknowledgements.markdown */,
-				320E04F98278C7F5A265FA6BFFCB1772 /* Pods-Teleport_Tests-acknowledgements.plist */,
-				0AE17C240718A2F7790496691F29EF7D /* Pods-Teleport_Tests-dummy.m */,
-				49A809D30B410D5184744227C95BA714 /* Pods-Teleport_Tests-frameworks.sh */,
-				5D326190FEAB50BC41C17CBEBD9BEF73 /* Pods-Teleport_Tests-resources.sh */,
-				C5BCC429F0EF47CB27E627E9AF5764D2 /* Pods-Teleport_Tests-umbrella.h */,
-				002DFEA5781AD95DA1A973AB14A8DAB3 /* Pods-Teleport_Tests.debug.xcconfig */,
-				5543694D44B2DB5F2EACBE54828958A1 /* Pods-Teleport_Tests.release.xcconfig */,
-			);
-			name = "Pods-Teleport_Tests";
-			path = "Target Support Files/Pods-Teleport_Tests";
-			sourceTree = "<group>";
-		};
-		C8400A4A959633066019692169F87FE9 /* Teleport */ = {
-			isa = PBXGroup;
-			children = (
-				94F674F410D513CC35CE1976A3D4F5DB /* Classes */,
+				F1BA686351EFF29C444FDEDB7B321F5D /* Classes */,
 			);
 			path = Teleport;
 			sourceTree = "<group>";
 		};
-		F4A24DA6665D562967A80DFE669AB2AA /* UIKit */ = {
+		D776E468639804D1B7F1F1421409F2EC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				BCA7F16679D90E5DAE3F8753D02FFB1C /* CGRect+Utils.swift */,
-				D21D2D44B78420878A4D921DAE44B1CF /* UIBarButtonItem+Utils.swift */,
-				4D84B431286B6A9D0DC70E8DC4F881CB /* UIFont+Utils.swift */,
-				514A77D3DFA8333014606E04E5DF1EA0 /* UINavigationController+Utils.swift */,
-				6501CABEB68E6D9574429D3964831F2E /* UINib+Utils.swift */,
-				C7DE3AC1F6CB095887C0827208C6DA9A /* UITableView+Utils.swift */,
-				7553D5C850077DFF5D0F66DE545790E2 /* UIView+Utils.swift */,
+				1B9E69C9E15E170B3686E6794B73E8B4 /* UINavigationController+Utils.swift */,
+				6030028B29240664565993D9C055F20F /* UIStoryboard+Utils.swift */,
 			);
-			path = UIKit;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		F77AF06805418231B201A8AEE99B4DDB /* Layitout */ = {
+		DBCE43F6E95662352745C744FA5CE0F9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5F22A216C0F68C5905EACDFA0C42162 /* Layout.swift */,
-				69D90985A122E7A1CB167ED4A37DE0AC /* UIView+Utils.swift */,
-				BA999D096569D9B64BDC6BA75F412FB7 /* Support Files */,
+				490D4E3172BEE803E077E1E89DD2FBA9 /* Info.plist */,
+				884514B82B1E9D48EFBB20BB6ED310AB /* Info.plist */,
+				0F3BBD6E79112E0927408F6E80D23801 /* Miscel-iOS8.3.modulemap */,
+				F446EB8191824F765F8F35D0067AFB54 /* Miscel-iOS8.3.xcconfig */,
+				391A714D02EEE3E221174C28A9EA3B09 /* Miscel-iOS8.3-dummy.m */,
+				16674FABDB8702FEB8B00F2FA5498B3D /* Miscel-iOS8.3-prefix.pch */,
+				1E4E98566A520CD21D5ACA50F8653467 /* Miscel-iOS8.3-umbrella.h */,
+				31E8DAB3F597C6AC518A37007FB5CC82 /* Miscel-iOS9.3.modulemap */,
+				5FFBE23E0C5C4CD87C1E2D5EB67A2969 /* Miscel-iOS9.3.xcconfig */,
+				56C2D0FC1BFCFCAC3FE10E264DB905A0 /* Miscel-iOS9.3-dummy.m */,
+				1F20A56B12D44203AC812CCA20E64F7F /* Miscel-iOS9.3-prefix.pch */,
+				2541176BC97E56D77F24E2D56C70AA4F /* Miscel-iOS9.3-umbrella.h */,
 			);
-			path = Layitout;
+			name = "Support Files";
+			path = "../teleport/Example/Pods/Target Support Files/Miscel-iOS8.3";
 			sourceTree = "<group>";
 		};
-		FCFBB9DAD7F6A1C792174A43CB56BFF7 /* Teleport */ = {
+		EC4951D62B68C6F04FF292879C074678 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9DDA4B9A0E3EBCD116296CEF436E2DD5 /* Support Files */,
-				C8400A4A959633066019692169F87FE9 /* Teleport */,
+				442DB2F220A191E8E6104F3DCEC35A0A /* Pods-ModalExample */,
+				8FD01E9E53171CB85D41A49C9919A636 /* Pods-Teleport_Example */,
+				2BE2E4218256BF731B252A0A37942A3D /* Pods-Teleport_Tests */,
 			);
-			name = Teleport;
-			path = ../..;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F1BA686351EFF29C444FDEDB7B321F5D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3763D27FC05E05ADAAD3270D68F02D33 /* NavigationComponent.swift */,
+				06F21453CB92064B7E57B82C3016FEA0 /* NavigationState.swift */,
+				D776E468639804D1B7F1F1421409F2EC /* Utils */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5608A449E3F71FA8445666C784D55DCC /* Headers */ = {
+		0B7478D4BF1BE9A1B3A5BD52D2822F1A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A403701D81498710139F76E7AD79D96 /* GTMNSString+HTML.h in Headers */,
-				DD614077C0B6950E8302997CBD7CBE82 /* Miscel-umbrella.h in Headers */,
-				48B27FE77F7787C48473532C0386B0AC /* NSString+HTML.h in Headers */,
+				18FC523A1C181C2ACB628E104650E508 /* Layitout-iOS8.3-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862A6BE618B015B7FDA15FF464FA2E49 /* Headers */ = {
+		594CF7E431736025B8B3682B780EB903 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21AE1EED00EA7BFF7E6A698685B021F6 /* Layitout-umbrella.h in Headers */,
+				11BDE98C2CF2F44191C6AC23662A5A35 /* GTMNSString+HTML.h in Headers */,
+				CFA9ABAAC53C600DAFC52F0FB0294339 /* Miscel-iOS9.3-umbrella.h in Headers */,
+				D996BB43B705D9F1EFCF7F53D4DAEDFE /* NSString+HTML.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB4328303CF31AC2143EDB16BBF336D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7961A752A3A29726BAC8DAD35D51866D /* GTMNSString+HTML.h in Headers */,
+				7A656D3EDE9D588FC977D39D2847B5E9 /* Miscel-iOS8.3-umbrella.h in Headers */,
+				62200847B04678A61FFD5D71C4AD3F7C /* NSString+HTML.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F281F6EC4A9ECE8396B7C92C357DA9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98EC23CDEA196193E2D843B7F122E85 /* Teleport-iOS8.3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94979CA1E8B3A3D8E809E02262D8C28F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB5DCA4C4EB6D5BC84A9380D024DB9D /* Pods-ModalExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95767EA3E76C3E03E571FB506AAE65D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DE8ACC4A9D8ECF4F189A6CD8679258B /* Teleport-iOS9.3-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,62 +825,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF7DF4A5E1B9BE15D14A14412B2243D2 /* Headers */ = {
+		BCED9CDCF97A1028C1DF131C47B7BCD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28108DA0F707C37D301A8AA1BF3C68B /* Teleport-umbrella.h in Headers */,
+				72AB996818D951AFCC5B5E301D7E16B7 /* Pods-Teleport_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9A3947D001D50C26AF0F7DE87470921 /* Headers */ = {
+		FDE006FC6DD9ED13AF14CA81373D1AE4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC703A15F5D956940CCAA845F5EB993 /* Pods-Teleport_Example-umbrella.h in Headers */,
+				EADCA42FD664A41988C431B5FB4D52B5 /* Layitout-iOS9.3-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1ACCE165A83EA644BE31F9E9E322B93F /* Teleport */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C6F4016A8713A347D21B1FC28F7A26F1 /* Build configuration list for PBXNativeTarget "Teleport" */;
-			buildPhases = (
-				E0726349F0EC4BADB36A48C8B4DFA7D2 /* Sources */,
-				4CEDF931A295EBC998FD4BEC60C2F41A /* Frameworks */,
-				EF7DF4A5E1B9BE15D14A14412B2243D2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4423CD64AC2138D1608E360EB96A69E3 /* PBXTargetDependency */,
-				70E6B17673049080BA28D5C8D3600855 /* PBXTargetDependency */,
-			);
-			name = Teleport;
-			productName = Teleport;
-			productReference = EA442F3E9861431A21F70253E5BDDCC6 /* Teleport.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		300C40639F547FA26666697A1118AA72 /* Miscel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22DEC4C6695AB3D8FEF2F7823A228E3C /* Build configuration list for PBXNativeTarget "Miscel" */;
-			buildPhases = (
-				495F6172061AB08752FDF3527FEADDF5 /* Sources */,
-				25634A0EB490CE1BE127D77A0F8675AE /* Frameworks */,
-				5608A449E3F71FA8445666C784D55DCC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9BAE156690B751E6C07C7D1450900E27 /* PBXTargetDependency */,
-			);
-			name = Miscel;
-			productName = Miscel;
-			productReference = 5A07014431D9013217DE0007D6F7CA1A /* Miscel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		371B2A95A2244FCADB1482FB1C22E9E4 /* Pods-Teleport_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04735CACA08772999BE4399FEAB5BFD0 /* Build configuration list for PBXNativeTarget "Pods-Teleport_Tests" */;
@@ -658,44 +858,155 @@
 			);
 			name = "Pods-Teleport_Tests";
 			productName = "Pods-Teleport_Tests";
-			productReference = 2B782E20A31207F711EF6A47654F367C /* Pods_Teleport_Tests.framework */;
+			productReference = 7FBCF85BE7A50FDC824404F1759936EF /* Pods_Teleport_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D6F5BBDEB9787E775B1D1925F11734D3 /* Pods-Teleport_Example */ = {
+		4A603E8A919821F152353CB4EAB0AB30 /* Pods-Teleport_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C198F102E54D2767F9CBA90C744809DE /* Build configuration list for PBXNativeTarget "Pods-Teleport_Example" */;
+			buildConfigurationList = 15E89A6D82F52D4398A803B8559E643B /* Build configuration list for PBXNativeTarget "Pods-Teleport_Example" */;
 			buildPhases = (
-				C48267EB89183388B9670ACA4D0A06C1 /* Sources */,
-				65DB55193901618C197502045B77D303 /* Frameworks */,
-				F9A3947D001D50C26AF0F7DE87470921 /* Headers */,
+				1AF624BFA0D46C2D51AAB0460D82701D /* Sources */,
+				F22D720F9189D5FCE052D40E203EA2AB /* Frameworks */,
+				BCED9CDCF97A1028C1DF131C47B7BCD6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8D0BBC475A2918897BD02A92CB29D9D0 /* PBXTargetDependency */,
-				03A0AF0B58658D3EC240559D14574732 /* PBXTargetDependency */,
-				18F0E2FB385D2027523B487696169792 /* PBXTargetDependency */,
+				7358E46B2A6FD70693A01D950CA2057F /* PBXTargetDependency */,
+				4C5D6B4EB654CCE3720DE204AD61E5F3 /* PBXTargetDependency */,
+				BB033084D60213CBA87B88B2F188EAA3 /* PBXTargetDependency */,
 			);
 			name = "Pods-Teleport_Example";
 			productName = "Pods-Teleport_Example";
-			productReference = 2A8A4CDC68B0A0795AE49E16F8D2CAC6 /* Pods_Teleport_Example.framework */;
+			productReference = E0A5ECCA9E46694558056D6882908BA4 /* Pods_Teleport_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F18097C9D256C93AD7AF018BF7B47468 /* Layitout */ = {
+		6153CED8C474F563AA5D1E444E821E4C /* Layitout-iOS8.3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 473BA944ED2FFFE4C18C79820C213555 /* Build configuration list for PBXNativeTarget "Layitout" */;
+			buildConfigurationList = 25E953F50DD863B6776342896C484CD6 /* Build configuration list for PBXNativeTarget "Layitout-iOS8.3" */;
 			buildPhases = (
-				B72E65C9291007AB68B3A613B7FA6D9C /* Sources */,
-				F6805CAFC2FB74C00A6464296785BD6F /* Frameworks */,
-				862A6BE618B015B7FDA15FF464FA2E49 /* Headers */,
+				E138C68C2791C769C337FF9C42FB8318 /* Sources */,
+				2B787F52524BB4731BFE8E818F3D2E1F /* Frameworks */,
+				0B7478D4BF1BE9A1B3A5BD52D2822F1A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Layitout;
-			productName = Layitout;
-			productReference = 4A6197381D9A348FA9F89462EFEDEC8F /* Layitout.framework */;
+			name = "Layitout-iOS8.3";
+			productName = "Layitout-iOS8.3";
+			productReference = D6AFAEC9BFC0C5BFCBC1175D9D51CC7C /* Layitout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		827E53246FA779F30B8B374D46F4B2AB /* Miscel-iOS9.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7057A9A360E10077564942AA863E3BB3 /* Build configuration list for PBXNativeTarget "Miscel-iOS9.3" */;
+			buildPhases = (
+				AA024CDBF881E05B0582C3911A649E59 /* Sources */,
+				A032CD674FBAC8321A9CDF14E2761761 /* Frameworks */,
+				594CF7E431736025B8B3682B780EB903 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C07FC0B5052A9876D198DE9F37AD8F /* PBXTargetDependency */,
+			);
+			name = "Miscel-iOS9.3";
+			productName = "Miscel-iOS9.3";
+			productReference = AE88A55CF6E04435A5BEDDE749A33F39 /* Miscel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A6BDC071F592F7D02B3572F21EA4A8B /* Miscel-iOS8.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24438302DBCAE7A124F6AE312F13E5BE /* Build configuration list for PBXNativeTarget "Miscel-iOS8.3" */;
+			buildPhases = (
+				0BF7543CB0D0EE1635C0CF5F0FD5D91A /* Sources */,
+				6348CA284F2049BC32A62C5E3ED16452 /* Frameworks */,
+				6BB4328303CF31AC2143EDB16BBF336D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E79F6BD36D3EFE6991106D45E638FA65 /* PBXTargetDependency */,
+			);
+			name = "Miscel-iOS8.3";
+			productName = "Miscel-iOS8.3";
+			productReference = 1AA8967EAB24A207803C616E8291AB42 /* Miscel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9BEA2435E19F9B7B5B46D6634B62B441 /* Teleport-iOS9.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 116ACBC139BA46E59D23CAE25C3D0FF1 /* Build configuration list for PBXNativeTarget "Teleport-iOS9.3" */;
+			buildPhases = (
+				B81A2DD5F028F286FECB1A40FB231C3F /* Sources */,
+				83E04D65847315B613ED7E64BBF1AFD9 /* Frameworks */,
+				95767EA3E76C3E03E571FB506AAE65D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D05A2B61DCB4354832FB36C08F243B65 /* PBXTargetDependency */,
+				1C88DFF529D9B334D6E54360015BAE16 /* PBXTargetDependency */,
+			);
+			name = "Teleport-iOS9.3";
+			productName = "Teleport-iOS9.3";
+			productReference = D1A0D5C8B6DA2A59ACAEF8426D1F2160 /* Teleport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0F2D8E64432006C90888647C59793D3 /* Layitout-iOS9.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D4737085900A29217F539BAF05C8E3A /* Build configuration list for PBXNativeTarget "Layitout-iOS9.3" */;
+			buildPhases = (
+				21439B877FF047C6089B0A1B66C2B9C3 /* Sources */,
+				2CFA33A97D8EB15FEB09501F05B5362D /* Frameworks */,
+				FDE006FC6DD9ED13AF14CA81373D1AE4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Layitout-iOS9.3";
+			productName = "Layitout-iOS9.3";
+			productReference = 676518E066B6400B1E3C57580EB9E1B8 /* Layitout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1763241745D77E45D3AF7D64D7104E2 /* Teleport-iOS8.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 242CEE0B7F671789B85FC22F7497EF5D /* Build configuration list for PBXNativeTarget "Teleport-iOS8.3" */;
+			buildPhases = (
+				5FCE41561E362784E065093EEC4D9D25 /* Sources */,
+				20FF68D401935D31D15B73D96EEE5BFE /* Frameworks */,
+				8F281F6EC4A9ECE8396B7C92C357DA9B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B25A7BF2D6450E0181389C29383D61DE /* PBXTargetDependency */,
+				AB4665012364242AFF67436CB27BF894 /* PBXTargetDependency */,
+			);
+			name = "Teleport-iOS8.3";
+			productName = "Teleport-iOS8.3";
+			productReference = DB6C959CD46043161D72A27A2CEBE730 /* Teleport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E35AD2EC39035B46F518F62DCB5938A1 /* Pods-ModalExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29D8F7ED09F91BE2103C0B4C60E4C459 /* Build configuration list for PBXNativeTarget "Pods-ModalExample" */;
+			buildPhases = (
+				F42791E170C7BBD657D80D56A24647C9 /* Sources */,
+				31448A530EB705CC1C8ED2521751DF5A /* Frameworks */,
+				94979CA1E8B3A3D8E809E02262D8C28F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2510206BDC27F1C2018EB11A4C3B58 /* PBXTargetDependency */,
+				1116A07F34549C5502131F04E1B6E283 /* PBXTargetDependency */,
+				52EF4C82CBDC7010F6FEE5B6140BFB80 /* PBXTargetDependency */,
+			);
+			name = "Pods-ModalExample";
+			productName = "Pods-ModalExample";
+			productReference = F4A476BD28ADC0C0FCF4817BD6DAD91E /* Pods_ModalExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -715,55 +1026,77 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 12B856071BB5C0B75B479DE47C2D4C54 /* Products */;
+			productRefGroup = 2B20AAC14E798F1E95104465AB2DB480 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F18097C9D256C93AD7AF018BF7B47468 /* Layitout */,
-				300C40639F547FA26666697A1118AA72 /* Miscel */,
-				D6F5BBDEB9787E775B1D1925F11734D3 /* Pods-Teleport_Example */,
+				6153CED8C474F563AA5D1E444E821E4C /* Layitout-iOS8.3 */,
+				A0F2D8E64432006C90888647C59793D3 /* Layitout-iOS9.3 */,
+				9A6BDC071F592F7D02B3572F21EA4A8B /* Miscel-iOS8.3 */,
+				827E53246FA779F30B8B374D46F4B2AB /* Miscel-iOS9.3 */,
+				E35AD2EC39035B46F518F62DCB5938A1 /* Pods-ModalExample */,
+				4A603E8A919821F152353CB4EAB0AB30 /* Pods-Teleport_Example */,
 				371B2A95A2244FCADB1482FB1C22E9E4 /* Pods-Teleport_Tests */,
-				1ACCE165A83EA644BE31F9E9E322B93F /* Teleport */,
+				C1763241745D77E45D3AF7D64D7104E2 /* Teleport-iOS8.3 */,
+				9BEA2435E19F9B7B5B46D6634B62B441 /* Teleport-iOS9.3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		495F6172061AB08752FDF3527FEADDF5 /* Sources */ = {
+		0BF7543CB0D0EE1635C0CF5F0FD5D91A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B8E3BCEE6B73D480624393B3C3BB1D /* Array+Equatable.swift in Sources */,
-				9F8EDF323FEF75EAF226167100BE1A7B /* Array+Monoid.swift in Sources */,
-				BBDB017244915EE38CBBD421A9D9D894 /* Array.swift in Sources */,
-				8B2050D53DDDA2CABCFBDB2A42FE42A5 /* AssignNotNil.swift in Sources */,
-				CA70F53FC4ACD573CC4A8D865E81F1BC /* Boolean.swift in Sources */,
-				67A0001352395F8561456A337C710581 /* CALayer.swift in Sources */,
-				0F4FFDB1B9875B26E9935C51C788DD4B /* CGRect+Utils.swift in Sources */,
-				DF6F1E9BB66E55AD9EF66D5FE110D042 /* Composition.swift in Sources */,
-				52E4F20E4A0146E0C9052237BBAE0C64 /* Either.swift in Sources */,
-				94B16FEC105D2B6045B23A874BDCDB45 /* Folds.swift in Sources */,
-				799FA78A266F38CFD40EC2715A31DFE6 /* Functions.swift in Sources */,
-				49EC8D9D31A677BDE8BCB62BAA5583C2 /* GTMNSString+HTML.m in Sources */,
-				F1BB13C7C437F30873DF6AB680CB9EE0 /* Miscel-dummy.m in Sources */,
-				228F30E76022F33A49C79C2EC39A49FF /* Monoid.swift in Sources */,
-				A5DC9AB2CF473BD2F3E3CA7B8C2A0BDC /* NSAttributedString+Utils.swift in Sources */,
-				3E78F10BDFDE4B991B3BBEE8962A5B93 /* NSDate.swift in Sources */,
-				6BACEA9D7D83A24A3269ECD7B5729ED7 /* NSString+HTML.m in Sources */,
-				0086B51D2DF16B23B43C1BEBDAC02B2C /* Paths.swift in Sources */,
-				57857FEFB007E9D503BB0AC26A9F4EFA /* Reader.swift in Sources */,
-				EBBF9B231B5514B12F2553FE74ED825A /* SequenceType+Take.swift in Sources */,
-				A634435633ADFEF3B6C6EDFD32D23F1A /* String+Monoid.swift in Sources */,
-				20ECD4F1C27B873559A93C84DC617C88 /* String.swift in Sources */,
-				C60B2C17F43B34EBABA301AE2C1EB002 /* Sum.swift in Sources */,
-				C93D2820A59F1817CE30A877EDA3550B /* TypeUtils.swift in Sources */,
-				75C2D170A6DF9C9645E57972DF29C2BB /* UIBarButtonItem+Utils.swift in Sources */,
-				9D0994B926899E226ED88635C1EE17ED /* UIFont+Utils.swift in Sources */,
-				52A7FE7EAED43A0292D7F9D2B6155C58 /* UINavigationController+Utils.swift in Sources */,
-				36A768F1B9EE39C762B8EBDAAC59474B /* UINib+Utils.swift in Sources */,
-				6872A8E921A3A535EA5E3B535BE79A48 /* UITableView+Utils.swift in Sources */,
-				F1DB128AFB757AA23A1A19917B78DE9B /* UIView+Utils.swift in Sources */,
-				C734AABA80DC16379A5B2E8DFE653D23 /* Writer.swift in Sources */,
+				99332E30C4EDA6E546787745156C0539 /* Array+Equatable.swift in Sources */,
+				753F066C94CA6CCBF79AF66B121D3C0F /* Array+Monoid.swift in Sources */,
+				297EE43B92559DC7C18DD7CAD2776CCB /* Array.swift in Sources */,
+				922F1F9E7744E5FEB9BAEC96F77F6B9E /* AssignNotNil.swift in Sources */,
+				55A570AF82D7B9B361B56242221CFDC0 /* Boolean.swift in Sources */,
+				B31FDCD16284AD83311A106C534FFCE8 /* CALayer.swift in Sources */,
+				DA7FF2C39A55B6A8FA414B5635FBC4F8 /* CGRect+Utils.swift in Sources */,
+				4CCA895A2D855A3C9C38853980E0C241 /* Composition.swift in Sources */,
+				CE29613AA1FFF1AF25CCEED0595A54F0 /* Either.swift in Sources */,
+				CB78D8892A4C349D89FB5EA3EB4C4BC4 /* Folds.swift in Sources */,
+				8076CAB1E31C559A3425F6528CA6403C /* Functions.swift in Sources */,
+				BB6922A16CBBD64F8663DCEF464B4481 /* GTMNSString+HTML.m in Sources */,
+				1C9D1B7B2CA21E243758FCE867895311 /* Miscel-iOS8.3-dummy.m in Sources */,
+				426C3C9491EDDA85CD9A092C5CE7B7FF /* Monoid.swift in Sources */,
+				F05B1D815D8DE9BA9A26F1A8F584FA08 /* NSAttributedString+Utils.swift in Sources */,
+				546A6C5074E6F44ADC101368D792D118 /* NSDate.swift in Sources */,
+				18A56CBD4BBE3C21672DD8E2DB17F742 /* NSString+HTML.m in Sources */,
+				8A4B628E8824543F12DCD4B25044DCB9 /* Paths.swift in Sources */,
+				64B9FC2DAC407A68C85B4A67A925B4D7 /* Reader.swift in Sources */,
+				3CC6063B23475757784F06AB7670CFAC /* SequenceType+Take.swift in Sources */,
+				F942C9B4F047652BA95DD4C8C3D70A03 /* String+Monoid.swift in Sources */,
+				AB9A9B7BF745BAC090BF5987F49340BD /* String.swift in Sources */,
+				BBB90B78C6E183AF3D8CD2E38258CB08 /* Sum.swift in Sources */,
+				D08BF03174BD0AB0DAED7BD3E5C193D6 /* TypeUtils.swift in Sources */,
+				54724600659FCCE442C311C1BF4B9D52 /* UIBarButtonItem+Utils.swift in Sources */,
+				68B2ACA42709855F2A080BE3EE4FD173 /* UIFont+Utils.swift in Sources */,
+				B7DE281D388C9E13D857FFC06FECC527 /* UINavigationController+Utils.swift in Sources */,
+				0FF59AB48BE00DE77E51649E7CF092F7 /* UINib+Utils.swift in Sources */,
+				FBE893EF05254D6251F22DB2FD535BAF /* UITableView+Utils.swift in Sources */,
+				E323DE0AE7CA48BC4AAE83E909157D29 /* UIView+Utils.swift in Sources */,
+				DF74608E0E40F6F41F8D5607ECA34528 /* Writer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF624BFA0D46C2D51AAB0460D82701D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD6394E0F6B37ACE40E8F13BEDB43EF /* Pods-Teleport_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21439B877FF047C6089B0A1B66C2B9C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02591C4BCAC5046B779F80C7BF2EF14B /* Layitout-iOS9.3-dummy.m in Sources */,
+				472718E9B8B38CBE53B0EB632BD3AABE /* Layout.swift in Sources */,
+				56412C410872AB7ABF06A81897F267D3 /* UIView+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,112 +1108,164 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B72E65C9291007AB68B3A613B7FA6D9C /* Sources */ = {
+		5FCE41561E362784E065093EEC4D9D25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA640CD2FD7B4B5C908B6081F8553BCF /* Layitout-dummy.m in Sources */,
-				B5115F4363997776670E4B042DE43620 /* Layout.swift in Sources */,
-				49CA09E138A800CE42268A01018EDCE8 /* UIView+Utils.swift in Sources */,
+				2589B361532EAF8135C7A6D8E0DEE244 /* NavigationComponent.swift in Sources */,
+				8EC99B0C380A20177FA1506268814960 /* NavigationState.swift in Sources */,
+				CA1EF0DDD950210952DEC975292DE971 /* Teleport-iOS8.3-dummy.m in Sources */,
+				8187D1FD0C67BD4CAF3F20D8451A631F /* UINavigationController+Utils.swift in Sources */,
+				C7C1E85DB870493963280FDC0F0E64F5 /* UIStoryboard+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C48267EB89183388B9670ACA4D0A06C1 /* Sources */ = {
+		AA024CDBF881E05B0582C3911A649E59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34944AF79644C7C7D07E927A5E1E39CD /* Pods-Teleport_Example-dummy.m in Sources */,
+				8F84F99703C36B3B670E63EEB5AF1B46 /* Array+Equatable.swift in Sources */,
+				2C332E70D4E784FD4629F30EBD7523FB /* Array+Monoid.swift in Sources */,
+				D32CB93C3BB696B5662BF076C815DC34 /* Array.swift in Sources */,
+				EC0DD75CF4275333D738A9643F8050E3 /* AssignNotNil.swift in Sources */,
+				3BA7086C1A279CEEB6F7EABA1E91C82B /* Boolean.swift in Sources */,
+				090AD0FD3676A9EB596AFEF7A78B1982 /* CALayer.swift in Sources */,
+				E1DABC7927A13BAE830FDA1DAD6AD7F8 /* CGRect+Utils.swift in Sources */,
+				58CED9ECE66DFF91F66691EF8F3EEA65 /* Composition.swift in Sources */,
+				23EF49A557FD6B37995FFF2D5BE3FC62 /* Either.swift in Sources */,
+				84175F0A109C41600D6D27E39F59E4BC /* Folds.swift in Sources */,
+				0CD017FC95DB62B57821A0D06ADF840A /* Functions.swift in Sources */,
+				B3D770EBB2BA1416B9B7B27BD466490B /* GTMNSString+HTML.m in Sources */,
+				2D747063A265ECBCDD725D5FF54DB63C /* Miscel-iOS9.3-dummy.m in Sources */,
+				63293A9DDE38072D38DAA1616ECCE0E5 /* Monoid.swift in Sources */,
+				204D2A60B359526F9EB797A66ED82272 /* NSAttributedString+Utils.swift in Sources */,
+				0FA7273783328867BB4ADDE0A5142B83 /* NSDate.swift in Sources */,
+				492885F96306E7999379293DDBD5ABDB /* NSString+HTML.m in Sources */,
+				B58C5D045D3E13FF049656B84570F2A2 /* Paths.swift in Sources */,
+				315E2F008F95BDACB1BC32449CE1986B /* Reader.swift in Sources */,
+				4138B40EA21507A5471B2AA691127384 /* SequenceType+Take.swift in Sources */,
+				4F5E114A90DC2E2D56C72645C66EF216 /* String+Monoid.swift in Sources */,
+				656CC93E24C1E5C84CAF34EA85AEA947 /* String.swift in Sources */,
+				EDCCF132435E651AF8F8AA95E2D739C6 /* Sum.swift in Sources */,
+				243B5925F5137FA161960C8D19D1A65C /* TypeUtils.swift in Sources */,
+				B81756C2C6CC8D8980E737CEBAE2A192 /* UIBarButtonItem+Utils.swift in Sources */,
+				FB0A542498CC4A9A34E087DFF536AAFF /* UIFont+Utils.swift in Sources */,
+				F63947E5582D5551ED01166ECB5E5833 /* UINavigationController+Utils.swift in Sources */,
+				568AA4181154B8BBE5C121F410E0F76A /* UINib+Utils.swift in Sources */,
+				9832774CE83D3987D65893215AA95FD0 /* UITableView+Utils.swift in Sources */,
+				3C535CD4C4278F0BCBE95CB9A9DAD3E1 /* UIView+Utils.swift in Sources */,
+				0457C57653FBB9337389FD74BE39A679 /* Writer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0726349F0EC4BADB36A48C8B4DFA7D2 /* Sources */ = {
+		B81A2DD5F028F286FECB1A40FB231C3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FDFB0D54A66BFF62DB28DCCDB5552B /* NavigationComponent.swift in Sources */,
-				B291404323D0D2D5B773C4C8F8F09719 /* NavigationState.swift in Sources */,
-				0800065BD95EB0F280FB840772B7CB87 /* Teleport-dummy.m in Sources */,
-				365753C01685B0E340EF9DD345A023B4 /* UINavigationController+Utils.swift in Sources */,
-				D1AECA639D45E17079F861524F3DDFC0 /* UIStoryboard+Utils.swift in Sources */,
+				B736841761633A072D206E7B69ED373C /* NavigationComponent.swift in Sources */,
+				789BB703F16BE301F90601E9DE446DC7 /* NavigationState.swift in Sources */,
+				1781A9EAB40876F01CD3FA1CCB238EA1 /* Teleport-iOS9.3-dummy.m in Sources */,
+				5D7527B996959D2BD894800D274C9E58 /* UINavigationController+Utils.swift in Sources */,
+				BE4A94B90173BA1FC2E00C229AD0D41A /* UIStoryboard+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E138C68C2791C769C337FF9C42FB8318 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C668C41604F966C4AB383BC57481193 /* Layitout-iOS8.3-dummy.m in Sources */,
+				6A428485CD74AEBED266155CC8599F62 /* Layout.swift in Sources */,
+				9384EC5F2F2182F6F78662BB9EC5511C /* UIView+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42791E170C7BBD657D80D56A24647C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A109863FB9BE05D4F5176064287593B6 /* Pods-ModalExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		03A0AF0B58658D3EC240559D14574732 /* PBXTargetDependency */ = {
+		1116A07F34549C5502131F04E1B6E283 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Miscel;
-			target = 300C40639F547FA26666697A1118AA72 /* Miscel */;
-			targetProxy = D6C0DBC6D9975CFFB103EC23A48684DE /* PBXContainerItemProxy */;
+			name = "Miscel-iOS9.3";
+			target = 827E53246FA779F30B8B374D46F4B2AB /* Miscel-iOS9.3 */;
+			targetProxy = 9183B90B433F166F8A410E4D9AFE5680 /* PBXContainerItemProxy */;
 		};
-		18F0E2FB385D2027523B487696169792 /* PBXTargetDependency */ = {
+		1C88DFF529D9B334D6E54360015BAE16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Teleport;
-			target = 1ACCE165A83EA644BE31F9E9E322B93F /* Teleport */;
-			targetProxy = C4F2CBFC2247BFB12CB34D9ABEB990AB /* PBXContainerItemProxy */;
+			name = "Miscel-iOS9.3";
+			target = 827E53246FA779F30B8B374D46F4B2AB /* Miscel-iOS9.3 */;
+			targetProxy = 9C816EA043BE109EF0368477DEF8D10F /* PBXContainerItemProxy */;
 		};
-		4423CD64AC2138D1608E360EB96A69E3 /* PBXTargetDependency */ = {
+		4C5D6B4EB654CCE3720DE204AD61E5F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Layitout;
-			target = F18097C9D256C93AD7AF018BF7B47468 /* Layitout */;
-			targetProxy = CA38378B943D3747288AEA304154DAE3 /* PBXContainerItemProxy */;
+			name = "Miscel-iOS8.3";
+			target = 9A6BDC071F592F7D02B3572F21EA4A8B /* Miscel-iOS8.3 */;
+			targetProxy = 3283989B5D0D776ADC0D9DBBDA84B2F8 /* PBXContainerItemProxy */;
 		};
-		70E6B17673049080BA28D5C8D3600855 /* PBXTargetDependency */ = {
+		52EF4C82CBDC7010F6FEE5B6140BFB80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Miscel;
-			target = 300C40639F547FA26666697A1118AA72 /* Miscel */;
-			targetProxy = 6F3ACFD6C3EFF3A184B21533D23BB961 /* PBXContainerItemProxy */;
+			name = "Teleport-iOS9.3";
+			target = 9BEA2435E19F9B7B5B46D6634B62B441 /* Teleport-iOS9.3 */;
+			targetProxy = 8ABD7942C78BA6C747D7B93DF33C71F2 /* PBXContainerItemProxy */;
 		};
-		8D0BBC475A2918897BD02A92CB29D9D0 /* PBXTargetDependency */ = {
+		63C07FC0B5052A9876D198DE9F37AD8F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Layitout;
-			target = F18097C9D256C93AD7AF018BF7B47468 /* Layitout */;
-			targetProxy = 3ADAF683171DEFD0FBA354FF9AEC5167 /* PBXContainerItemProxy */;
+			name = "Layitout-iOS9.3";
+			target = A0F2D8E64432006C90888647C59793D3 /* Layitout-iOS9.3 */;
+			targetProxy = 9DA6819CBF4621003A9FE144C07E0B8D /* PBXContainerItemProxy */;
 		};
-		9BAE156690B751E6C07C7D1450900E27 /* PBXTargetDependency */ = {
+		7358E46B2A6FD70693A01D950CA2057F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Layitout;
-			target = F18097C9D256C93AD7AF018BF7B47468 /* Layitout */;
-			targetProxy = 9EF0ED925FD51B2DA4D2253CDCAE6268 /* PBXContainerItemProxy */;
+			name = "Layitout-iOS8.3";
+			target = 6153CED8C474F563AA5D1E444E821E4C /* Layitout-iOS8.3 */;
+			targetProxy = 716DCE9A92B5C256D5B5D3E7ACC9EB2C /* PBXContainerItemProxy */;
+		};
+		AB4665012364242AFF67436CB27BF894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Miscel-iOS9.3";
+			target = 827E53246FA779F30B8B374D46F4B2AB /* Miscel-iOS9.3 */;
+			targetProxy = B7E6317C3759AC5A0516310D82BD5916 /* PBXContainerItemProxy */;
+		};
+		B25A7BF2D6450E0181389C29383D61DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Layitout-iOS9.3";
+			target = A0F2D8E64432006C90888647C59793D3 /* Layitout-iOS9.3 */;
+			targetProxy = FB9ABF1FD365DCABC841CD5E9DAD6E2A /* PBXContainerItemProxy */;
+		};
+		BB033084D60213CBA87B88B2F188EAA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Teleport-iOS8.3";
+			target = C1763241745D77E45D3AF7D64D7104E2 /* Teleport-iOS8.3 */;
+			targetProxy = 21A88430D65512F6FE2C25892793C3ED /* PBXContainerItemProxy */;
+		};
+		CC2510206BDC27F1C2018EB11A4C3B58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Layitout-iOS9.3";
+			target = A0F2D8E64432006C90888647C59793D3 /* Layitout-iOS9.3 */;
+			targetProxy = CEA781C090DD9DC296B48B2FA09B7D69 /* PBXContainerItemProxy */;
+		};
+		D05A2B61DCB4354832FB36C08F243B65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Layitout-iOS9.3";
+			target = A0F2D8E64432006C90888647C59793D3 /* Layitout-iOS9.3 */;
+			targetProxy = 54F651FE2A989713E10B06C5C59012B9 /* PBXContainerItemProxy */;
+		};
+		E79F6BD36D3EFE6991106D45E638FA65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Layitout-iOS9.3";
+			target = A0F2D8E64432006C90888647C59793D3 /* Layitout-iOS9.3 */;
+			targetProxy = CDD077792B86B17A20A49FF521CC4B67 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A903B3C1B4CD85A0D5D1B8D73F94EE0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA515E85BB00770F0AE7DB8B21969529 /* Pods-Teleport_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Teleport_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Teleport_Example/Pods-Teleport_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Teleport_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -919,9 +1304,9 @@
 			};
 			name = Release;
 		};
-		7D87F18AAC33C8E1E4F13CD9E8565405 /* Release */ = {
+		45518B32C4ABDA4A37D927125E8A1A68 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5543694D44B2DB5F2EACBE54828958A1 /* Pods-Teleport_Tests.release.xcconfig */;
+			baseConfigurationReference = D695A6D0255DF9502FECF16E08C1127E /* Teleport-iOS8.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -932,18 +1317,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Teleport_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Teleport-iOS8.3/Teleport-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Teleport-iOS8.3/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Teleport_Tests/Pods-Teleport_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Teleport-iOS8.3/Teleport-iOS8.3.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Teleport_Tests;
+				PRODUCT_NAME = Teleport;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -952,9 +1333,9 @@
 			};
 			name = Release;
 		};
-		8E8AA0C6B16D19E3552977FDCFDF98E3 /* Debug */ = {
+		6D4C2AE22C73E8C4938510D68FD92B64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 002DFEA5781AD95DA1A973AB14A8DAB3 /* Pods-Teleport_Tests.debug.xcconfig */;
+			baseConfigurationReference = F75FDB5937BA584A59AD65EC88221BDA /* Pods-ModalExample.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -965,87 +1346,30 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Teleport_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ModalExample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Teleport_Tests/Pods-Teleport_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ModalExample/Pods-ModalExample.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Teleport_Tests;
+				PRODUCT_NAME = Pods_ModalExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A34E64CE8EE9625695C66EBB7BA83AAB /* Release */ = {
+		74C942E3325AD69A6BB9D5CF87E8EF92 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7650C120658C059A9EB3A791F634F961 /* Layitout.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Layitout/Layitout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Layitout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Layitout/Layitout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Layitout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A44031D3279DBB2751B24B7AA51AA99B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42876161A20D359DD0E269FCAE736DC2 /* Miscel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Miscel/Miscel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Miscel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Miscel/Miscel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Miscel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BB1922FB9A9D932C45910DFDD9AD8ACA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7650C120658C059A9EB3A791F634F961 /* Layitout.xcconfig */;
+			baseConfigurationReference = D695A6D0255DF9502FECF16E08C1127E /* Teleport-iOS8.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1056,12 +1380,42 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Layitout/Layitout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Layitout/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Teleport-iOS8.3/Teleport-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Teleport-iOS8.3/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Layitout/Layitout.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Teleport-iOS8.3/Teleport-iOS8.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Teleport;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A30B8897FB981CE62BD666D00D81F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE8EE0028CF86C50100B10356A03E31 /* Layitout-iOS8.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Layitout-iOS8.3/Layitout-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Layitout-iOS8.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Layitout-iOS8.3/Layitout-iOS8.3.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Layitout;
 				SDKROOT = iphoneos;
@@ -1073,9 +1427,9 @@
 			};
 			name = Debug;
 		};
-		C4FECFAB1F86A43869BC890DE69F8B27 /* Release */ = {
+		7D87F18AAC33C8E1E4F13CD9E8565405 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69037C31A38E0051DFF6FF54439FF864 /* Teleport.xcconfig */;
+			baseConfigurationReference = B3774023E1B63E10997FBC10BB3035BE /* Pods-Teleport_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1086,14 +1440,357 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Teleport/Teleport-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Teleport/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Teleport_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Teleport_Tests/Pods-Teleport_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Teleport_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DA48F01986BC736EB3EC055FCEE0225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DB0B90E70845AB626567129E3C7260 /* Pods-Teleport_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Teleport_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Teleport_Example/Pods-Teleport_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Teleport_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E8AA0C6B16D19E3552977FDCFDF98E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386AD453BB01EE053013CC5D6DB748B9 /* Pods-Teleport_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Teleport_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Teleport_Tests/Pods-Teleport_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Teleport_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A643FB20975A355AF7FDA49271D8F2C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C3E159E57CBCF3C4AC777A31019C3F3 /* Teleport-iOS9.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Teleport-iOS9.3/Teleport-iOS9.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Teleport-iOS9.3/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Teleport/Teleport.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Teleport-iOS9.3/Teleport-iOS9.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Teleport;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EC7294040B37C4E703EB5147BA4DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE8EE0028CF86C50100B10356A03E31 /* Layitout-iOS8.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Layitout-iOS8.3/Layitout-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Layitout-iOS8.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Layitout-iOS8.3/Layitout-iOS8.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Layitout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B55975512769324DC00E05F93DE09CCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFBE23E0C5C4CD87C1E2D5EB67A2969 /* Miscel-iOS9.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Miscel-iOS9.3/Miscel-iOS9.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Miscel-iOS9.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Miscel-iOS9.3/Miscel-iOS9.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Miscel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B55A492465EAC7831BDA47ABC686621A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF634F374367C1547C0376EED4346D0 /* Layitout-iOS9.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Layitout-iOS9.3/Layitout-iOS9.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Layitout-iOS9.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Layitout-iOS9.3/Layitout-iOS9.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Layitout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B62A43351AE57251E165F430633E40C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92DFAA98D35FD95714D60FBD7E6B01E6 /* Pods-Teleport_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Teleport_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Teleport_Example/Pods-Teleport_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Teleport_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B8CADCCED1758F0713D95943CD5CF53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFBE23E0C5C4CD87C1E2D5EB67A2969 /* Miscel-iOS9.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Miscel-iOS9.3/Miscel-iOS9.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Miscel-iOS9.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Miscel-iOS9.3/Miscel-iOS9.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Miscel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D017EFBFD8232DE9C81424B398264698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F446EB8191824F765F8F35D0067AFB54 /* Miscel-iOS8.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Miscel-iOS8.3/Miscel-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Miscel-iOS8.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Miscel-iOS8.3/Miscel-iOS8.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Miscel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0706AA4D7135758A4584749ECB3EF7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F446EB8191824F765F8F35D0067AFB54 /* Miscel-iOS8.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Miscel-iOS8.3/Miscel-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Miscel-iOS8.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Miscel-iOS8.3/Miscel-iOS8.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Miscel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D15F834D0CF3BC519F48DEF8E4C73C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2E26B6BECA63538FD37A115F4E2AD7 /* Pods-ModalExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ModalExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ModalExample/Pods-ModalExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ModalExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1144,9 +1841,39 @@
 			};
 			name = Debug;
 		};
-		E2BC319229BFF8706B10C05B80E89959 /* Release */ = {
+		E1E2A0DDA75C88868E7A3BE141D499A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D95A51B09B83F3428F87A878AEFCC67 /* Pods-Teleport_Example.release.xcconfig */;
+			baseConfigurationReference = EBF634F374367C1547C0376EED4346D0 /* Layitout-iOS9.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Layitout-iOS9.3/Layitout-iOS9.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Layitout-iOS9.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Layitout-iOS9.3/Layitout-iOS9.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Layitout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F16B64F3A7BAE53CAC852B58E6BA18E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C3E159E57CBCF3C4AC777A31019C3F3 /* Teleport-iOS9.3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1157,18 +1884,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Teleport_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Teleport-iOS9.3/Teleport-iOS9.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Teleport-iOS9.3/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Teleport_Example/Pods-Teleport_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Teleport-iOS9.3/Teleport-iOS9.3.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Teleport_Example;
+				PRODUCT_NAME = Teleport;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1176,66 +1899,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		E3EC6C12163852D787BBF7C8ECBD88BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42876161A20D359DD0E269FCAE736DC2 /* Miscel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Miscel/Miscel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Miscel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Miscel/Miscel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Miscel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E58DD979AC1A767484A358918E2E0C12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69037C31A38E0051DFF6FF54439FF864 /* Teleport.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Teleport/Teleport-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Teleport/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Teleport/Teleport.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Teleport;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1249,11 +1912,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22DEC4C6695AB3D8FEF2F7823A228E3C /* Build configuration list for PBXNativeTarget "Miscel" */ = {
+		116ACBC139BA46E59D23CAE25C3D0FF1 /* Build configuration list for PBXNativeTarget "Teleport-iOS9.3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3EC6C12163852D787BBF7C8ECBD88BF /* Debug */,
-				A44031D3279DBB2751B24B7AA51AA99B /* Release */,
+				A643FB20975A355AF7FDA49271D8F2C1 /* Debug */,
+				F16B64F3A7BAE53CAC852B58E6BA18E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E89A6D82F52D4398A803B8559E643B /* Build configuration list for PBXNativeTarget "Pods-Teleport_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DA48F01986BC736EB3EC055FCEE0225 /* Debug */,
+				B62A43351AE57251E165F430633E40C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		242CEE0B7F671789B85FC22F7497EF5D /* Build configuration list for PBXNativeTarget "Teleport-iOS8.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74C942E3325AD69A6BB9D5CF87E8EF92 /* Debug */,
+				45518B32C4ABDA4A37D927125E8A1A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24438302DBCAE7A124F6AE312F13E5BE /* Build configuration list for PBXNativeTarget "Miscel-iOS8.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0706AA4D7135758A4584749ECB3EF7D /* Debug */,
+				D017EFBFD8232DE9C81424B398264698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25E953F50DD863B6776342896C484CD6 /* Build configuration list for PBXNativeTarget "Layitout-iOS8.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A30B8897FB981CE62BD666D00D81F88 /* Debug */,
+				B4EC7294040B37C4E703EB5147BA4DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29D8F7ED09F91BE2103C0B4C60E4C459 /* Build configuration list for PBXNativeTarget "Pods-ModalExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D4C2AE22C73E8C4938510D68FD92B64 /* Debug */,
+				D15F834D0CF3BC519F48DEF8E4C73C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1267,29 +1975,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		473BA944ED2FFFE4C18C79820C213555 /* Build configuration list for PBXNativeTarget "Layitout" */ = {
+		4D4737085900A29217F539BAF05C8E3A /* Build configuration list for PBXNativeTarget "Layitout-iOS9.3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB1922FB9A9D932C45910DFDD9AD8ACA /* Debug */,
-				A34E64CE8EE9625695C66EBB7BA83AAB /* Release */,
+				E1E2A0DDA75C88868E7A3BE141D499A8 /* Debug */,
+				B55A492465EAC7831BDA47ABC686621A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C198F102E54D2767F9CBA90C744809DE /* Build configuration list for PBXNativeTarget "Pods-Teleport_Example" */ = {
+		7057A9A360E10077564942AA863E3BB3 /* Build configuration list for PBXNativeTarget "Miscel-iOS9.3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A903B3C1B4CD85A0D5D1B8D73F94EE0 /* Debug */,
-				E2BC319229BFF8706B10C05B80E89959 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C6F4016A8713A347D21B1FC28F7A26F1 /* Build configuration list for PBXNativeTarget "Teleport" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E58DD979AC1A767484A358918E2E0C12 /* Debug */,
-				C4FECFAB1F86A43869BC890DE69F8B27 /* Release */,
+				B55975512769324DC00E05F93DE09CCB /* Debug */,
+				B8CADCCED1758F0713D95943CD5CF53A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

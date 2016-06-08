@@ -50,6 +50,16 @@ public class NavigationComponent: NSObject {
 			
 			case (.ViewController(let c1, let child1), .ViewController(let c2, let child2)) where child1 != child2:
 				// TODO: Implement this
+				if let child1 = child1 {
+					root?.dismissViewControllerAnimated(false, completion: { 
+						
+					})
+				}
+				
+				if let child2 = child2, let childVC = self.loadView(child2) {
+					root?.presentViewController(childVC, animated: true, completion: nil)
+				}
+				
 				return root
 			
 			case (.NavigationController(let states1), .NavigationController(let states2)):
@@ -110,7 +120,13 @@ public class NavigationComponent: NSObject {
 				return nil
 			
 			case .ViewController(let c, let child):
-				return self.loadViewController(c)
+				let vc = self.loadViewController(c)
+			
+				if let child = child, let childVC = self.loadView(child) {
+					vc.presentViewController(childVC, animated: false, completion: nil)
+				}
+			
+				return vc
 			
 			case .NavigationController(let states):
 				let navC = UINavigationController()

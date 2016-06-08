@@ -1,13 +1,23 @@
 use_frameworks!
 
-target 'Teleport_Example' do
+def shared_pods
 	pod 'Layitout', :git => 'https://github.com/buscarini/Layitout.git', :branch => 'master'
 #	pod 'Miscel', :git => 'https://github.com/buscarini/Miscel.git', :branch => 'master'
 	pod 'Miscel', :path => '../../miscel'
 	
 	pod 'Teleport', :path => '../'
 
+end
+
+target 'ModalExample' do
+	shared_pods
+end
+
+target 'Teleport_Example' do
+	shared_pods
+	
 	target 'Teleport_Tests' do
 		inherit! :search_paths
 	end
 end
+

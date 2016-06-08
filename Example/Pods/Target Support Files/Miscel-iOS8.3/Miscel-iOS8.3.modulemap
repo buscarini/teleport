@@ -1,0 +1,6 @@
+framework module Miscel {
+  umbrella header "Miscel-iOS8.3-umbrella.h"
+
+  export *
+  module * { export * }
+}

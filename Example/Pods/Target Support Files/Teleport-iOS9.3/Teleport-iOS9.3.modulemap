@@ -1,5 +1,5 @@
 framework module Teleport {
-  umbrella header "Teleport-umbrella.h"
+  umbrella header "Teleport-iOS9.3-umbrella.h"
 
   export *
   module * { export * }
