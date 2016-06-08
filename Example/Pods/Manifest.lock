@@ -2,9 +2,11 @@ PODS:
   - Layitout (0.1.2)
   - Miscel (0.1.8):
     - Layitout
+  - RxSwift (2.5.0)
   - Teleport (0.1.0):
     - Layitout
     - Miscel
+    - RxSwift (~> 2.5)
 
 DEPENDENCIES:
   - Layitout (from `https://github.com/buscarini/Layitout.git`, branch `master`)
@@ -28,7 +30,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Layitout: 8ab04d3f4d09b945fca1a55902b2a993376056b8
   Miscel: 97e2add3ae619e7a9210ea56d00c657eed9678c9
-  Teleport: 3f1a35cf27a4819b8e6bfd9c503e0c5db09ad083
+  RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
+  Teleport: 302132a8cddf13317eba0539a8a125c4fe950210
 
 PODFILE CHECKSUM: ca3ce9cba7380e164bedc51b5e5ab0668366e27b
 

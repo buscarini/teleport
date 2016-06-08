@@ -86,10 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Layitout-iOS8.3/Layitout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Miscel-iOS8.3/Miscel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RxSwift-iOS8.3/RxSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Teleport-iOS8.3/Teleport.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Layitout-iOS8.3/Layitout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Miscel-iOS8.3/Miscel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RxSwift-iOS8.3/RxSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Teleport-iOS8.3/Teleport.framework"
 fi

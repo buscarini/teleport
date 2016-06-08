@@ -32,4 +32,6 @@ TODO: Add long description of the pod here.
 
 	s.dependency 'Layitout'
 	s.dependency 'Miscel'
+	s.dependency 'RxSwift', '~> 2.5'
+
 end

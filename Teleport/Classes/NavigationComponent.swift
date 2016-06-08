@@ -8,7 +8,14 @@
 
 import UIKit
 
+import RxSwift
 import Miscel
+
+enum NavigationError: ErrorType {
+	case StoryboardNotFound
+	case EmptyViewController
+	case Unknown
+}
 
 public class NavigationComponent: NSObject {
 	let window: UIWindow
@@ -34,61 +41,274 @@ public class NavigationComponent: NSObject {
 	func update(oldState: NavigationState, state: NavigationState) {
 		guard oldState != state else { return }
 		
-		window.rootViewController = self.viewControllerForUpdate(window.rootViewController, oldState: oldState, state: state)
+		self.updateActions(window, oldState: oldState, state: state).subscribeNext {
+			_ in
+			
+		}
+		
+//		window.rootViewController = self.viewControllerForUpdate()
 	}
 	
-	func viewControllerForUpdate(root: UIViewController?, oldState: NavigationState, state: NavigationState) -> UIViewController? {
+	func updateActions(window: UIWindow, oldState: NavigationState, state: NavigationState) -> Observable<UIViewController> {
+		let root = window.rootViewController
 		switch (oldState, state) {
 			case (_ , .Empty):
-				return nil
+				guard let root = root else {
+					return Observable.error(NavigationError.EmptyViewController)
+				}
+				
+				return Observable.just(root)
 		
 			case (.Empty, _):
-				return self.loadView(state)
+				let (result, setupChild) = self.loadView(state)
+				
+				return result
+				.flatMap { NavigationComponent.install(window, vc: $0) }
+				.flatMap(setupChild)
+			
+//				return self.loadView(state).flatMap { vc in
+//					return NavigationComponent.install(window, vc: vc)
+//				}
 		
 			case (.ViewController(let c1, let child1), .ViewController(let c2, let child2)) where c1 != c2:
-				return self.loadView(state)
+				let (result, setupChild) = self.loadView(state)
+				
+				return self.installVC(result, setupChildren: setupChild) {
+					NavigationComponent.install(window, vc: $0)
+				}
+				
+//				result
+//				.flatMap { NavigationComponent.install(window, vc: $0) }
+//				.flatMap(setupChild)
 			
 			case (.ViewController(let c1, let child1), .ViewController(let c2, let child2)) where child1 != child2:
 				// TODO: Implement this
+				var result = Observable.just(root!)
+				
 				if let child1 = child1 {
-					root?.dismissViewControllerAnimated(false, completion: { 
+					result = result.flatMap {
+						return NavigationComponent.dismiss($0, vc: $0)
+					}
+				}
+				
+				if let child2 = child2 {
+				
+					let blah: Observable<UIViewController> = result.flatMap { mainVC -> Observable<UIViewController> in
+						let (result, setupChild) = self.loadView(child2)
 						
-					})
+						return self.installVC(result, setupChildren: setupChild) {
+							NavigationComponent.present(mainVC, vc: $0)
+						}
+					}
+				
+					/*result = result.flatMap { mainVC in
+						let (result, setupChild) = self.loadView(child2)
+						
+						return self.installVC(result, setupChildren: setupChild) {
+							NavigationComponent.present(mainVC, vc: $0)
+						}
+						
+//						return result
+//							.flatMap {
+//								NavigationComponent.present(mainVC, vc: $0)
+//							}
+//							.flatMap(setupChild)
+					}*/
+						
+//					root?.presentViewController(childVC, animated: true, completion: nil)
 				}
 				
-				if let child2 = child2, let childVC = self.loadView(child2) {
-					root?.presentViewController(childVC, animated: true, completion: nil)
-				}
-				
-				return root
+				return result
 			
 			case (.NavigationController(let states1), .NavigationController(let states2)):
 				// TODO: Implement this
 				guard let navC = root as? UINavigationController else {
-					return root
+					let (result, setupChild) = self.loadView(state)
+					
+					return self.installVC(result, setupChildren: setupChild) {
+						NavigationComponent.install(window, vc: $0)
+					}
+
+//					result
+//					.flatMap { NavigationComponent.install(window, vc: $0) }
+//					.flatMap(setupChild)
+
+//					return self.loadView(state).flatMap { vc in
+//						NavigationComponent.install(window, vc: vc)
+//					}
 				}
 				
 				let (common, new) = NavigationComponent.commonSubsequence(states1, states: states2)
-				let newViews = new.flatMap(self.loadView)
 				
-				if common.count == navC.viewControllers.count {
-					// Only push
-					navC.pushViewControllers(newViews, animated: true)
-				}
-				else {
-					let commonViews = Array(navC.viewControllers.prefix(common.count))
+				let tuples = new.map(self.loadView)
+					
+				let results = tuples.map { (result, _) in return result }
+				let setupChildren = tuples.map { (_, setupChild) in return setupChild }
 				
-					navC.setViewControllers(commonViews + newViews, animated: true)
-				}
+				return results // [Observable<UIViewController>]
+						.toObservable() // Observable<[Observable<UIViewController>]>
+						.merge() // Observable<UIViewController>
+						.toArray() // Observable<[UIViewController]>
+						.flatMap { vcs -> Observable<UIViewController> in
+							let commonViews = Array(navC.viewControllers.prefix(common.count))
+							return NavigationComponent.replace(navC as! UINavigationController, with: commonViews + vcs, animated: true)
+						}  // Observable<UIViewController>
+						.flatMap { navC in
+							return setupChildren.flatMap { $0(navC) }
+								.toObservable()
+								.merge()
+								.toArray()
+								.map { vcs in
+									return navC
+								}
+						}
 			
-				return root
+			
+//						.map { vcs in
+//							return navC
+//						}
+			
+
+//						.map { _ in
+//							return navC
+//						}
+			
+			
+			
+
+				
+//				return results.flatMap {
+//					.toObservable()
+//					.merge()
+//					.toArray()
+//					.flatMap { vcs in
+//						NavigationComponent.replace(navC, with: vcs, animated: true)
+//					}
+//					.flatMap { navC in
+//						setupChildren.map { $0(navC) }.toObservable()
+//						.merge()
+//						.toArray()
+//					}
+//				}
+			
+//				return newViews.concat()
+//				.flatMap {
+//					newViews in
+//					
+//					let commonViews = Array(navC.viewControllers.prefix(common.count))
+//					return NavigationComponent.replace(navC, with: commonViews + newViews)
+//				}
+
+				
+//				if common.count == navC.viewControllers.count {
+//					// Only push
+//					
+//					
+//					navC.pushViewControllers(newViews, animated: true)
+//				}
+//				else {
+//				
+//					navC.setViewControllers(commonViews + newViews, animated: true)
+//				}
+			
+			
+			
+//				return self.loadView(state).flatMap {
+//					NavigationComponent.install(window, vc: $0)
+//				}
 			
 			case (.ViewController, .NavigationController), (.NavigationController, .ViewController):
-				return loadView(state)
+				let (result, setupChild) = self.loadView(state)
+				
+				return self.installVC(result, setupChildren: setupChild) {
+					NavigationComponent.install(window, vc: $0)
+				}
 			
 			default:
-				return root
+				return Observable.just(root!)
 		}
+	}
+	
+	func installVC(create: Observable<UIViewController>, setupChildren: (UIViewController) -> Observable<UIViewController>, install: (UIViewController) -> Observable<UIViewController>) -> Observable<UIViewController> {
+	
+		return create.flatMap(install).flatMap(setupChildren)
+	}
+	
+	func loadView(state: NavigationState) -> (create: Observable<UIViewController>, setupChildren: (UIViewController) -> Observable<UIViewController>)  {
+	
+		switch state {
+			case .Empty:
+				return (Observable.error(NavigationError.EmptyViewController), { Observable.just($0) })
+			
+			case .ViewController(let c, let child):
+				let vc = self.loadViewController(c)
+				let result = Observable.just(vc)
+			
+				let setupChild: (UIViewController) -> Observable<UIViewController>
+			
+				if let child = child {
+					setupChild = { vc in
+						let (childResult, setupDesc) = self.loadView(child)
+						return childResult
+						.flatMap {
+							NavigationComponent.present(vc, vc: $0, animated: true)
+						}
+						.flatMap(setupDesc)
+					}
+				
+					// FIXME: This can't be done at this point
+//					return result.flatMap { vc in
+//						
+//					
+//						self.loadView(child).flatMap {
+//							NavigationComponent.present(vc, vc: $0, animated: true)
+//						}
+//					}
+				}
+				else {
+					setupChild = { Observable.just($0) }
+				}
+			
+				return (result, setupChild)
+			
+			case .NavigationController(let states):
+			
+				let navC = UINavigationController()
+				navC.delegate = self
+				let result: Observable<UIViewController> = Observable.just(navC)
+				
+				let setupChild: (UIViewController) -> Observable<UIViewController> = {
+					vc in
+					
+					let tuples = states.map(self.loadView)
+					
+					let results = tuples.map { (result, _) in return result }
+					let setupChildren = tuples.map { (_, setupChild) in return setupChild }
+				
+					return results
+						.toObservable()
+						.merge()
+						.toArray()
+						.flatMap { vcs in
+							NavigationComponent.replace(navC as! UINavigationController, with: vcs, animated: true)
+						}
+						.flatMap { navC in
+							setupChildren.map { $0(navC) }.toObservable()
+							.merge()
+							.toArray()
+							.map { _ in
+								navC
+							}
+						}
+					
+				}
+			
+				return (result, setupChild)
+		}
+	}
+	
+	func loadViewController(aClass: AnyClass) -> UIViewController {
+		return UIStoryboard.loadView(aClass)!
 	}
 	
 	static func commonSubsequence(oldStates: [NavigationState], states: [NavigationState]) -> (common: [NavigationState], new: [NavigationState]) {
@@ -112,32 +332,6 @@ public class NavigationComponent: NSObject {
 				return ([state2] + subResult.common, subResult.new)
 		}
 	
-	}
-	
-	func loadView(state: NavigationState) -> UIViewController? {
-		switch state {
-			case .Empty:
-				return nil
-			
-			case .ViewController(let c, let child):
-				let vc = self.loadViewController(c)
-			
-				if let child = child, let childVC = self.loadView(child) {
-					vc.presentViewController(childVC, animated: false, completion: nil)
-				}
-			
-				return vc
-			
-			case .NavigationController(let states):
-				let navC = UINavigationController()
-				navC.delegate = self
-				navC.viewControllers = states.flatMap(self.loadView)
-				return navC
-		}
-	}
-	
-	func loadViewController(aClass: AnyClass) -> UIViewController {
-		return UIStoryboard.loadView(aClass)!
 	}
 	
 	static func changeSubState(forViewController vc: UIViewController, rootVC: UIViewController, rootState: NavigationState, change: (NavigationState) -> (NavigationState)) -> NavigationState {
