@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 		delegate.navigate(
 			.NavigationController(
 				[
-					.ViewController(ViewController2.self, child: nil),
+					.ViewController(ViewController.self, child: nil),
 					.ViewController(ViewController2.self, child: nil),
 				]
 			)

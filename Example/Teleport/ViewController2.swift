@@ -19,7 +19,13 @@ class ViewController2: UIViewController {
 
 	@IBAction func goto1(sender: AnyObject?) {
 		let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
-		delegate.navigate(.ViewController(ViewController.self, child: nil))
+		delegate.navigate(
+			.NavigationController(
+				[
+					.ViewController(ViewController.self, child: nil)
+				]
+			)
+		)
 	}
 }
 

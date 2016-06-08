@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		component = NavigationComponent(window: window!, initialState: .Empty)
 		
-		
+		self.navigate(.NavigationController([.ViewController(ViewController.self, child: nil)]))
 
         return true
     }
