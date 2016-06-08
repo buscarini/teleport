@@ -66,7 +66,9 @@ public class NavigationComponent: NSObject {
 					navC.pushViewControllers(newViews, animated: true)
 				}
 				else {
-					navC.setViewControllers(newViews, animated: true)
+					let commonViews = Array(navC.viewControllers.prefix(common.count))
+				
+					navC.setViewControllers(commonViews + newViews, animated: true)
 				}
 			
 				return root
