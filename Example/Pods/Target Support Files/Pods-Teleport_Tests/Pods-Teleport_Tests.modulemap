@@ -1,0 +1,6 @@
+framework module Pods_Teleport_Tests {
+  umbrella header "Pods-Teleport_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

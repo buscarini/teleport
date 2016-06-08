@@ -1,0 +1,16 @@
+PODS:
+  - Teleport (0.1.0)
+
+DEPENDENCIES:
+  - Teleport (from `../`)
+
+EXTERNAL SOURCES:
+  Teleport:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Teleport: 16d1b79ea66067217ba75e540ff4a0a0ce4c7019
+
+PODFILE CHECKSUM: a1191ca6465cd2ab884704a3c5df39b4eef0a293
+
+COCOAPODS: 1.0.0

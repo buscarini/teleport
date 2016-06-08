@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Teleport_Example' do
+  pod 'Teleport', :path => '../'
+
+  target 'Teleport_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
