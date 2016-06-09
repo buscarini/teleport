@@ -24,6 +24,14 @@ struct ViewControllerInstall {
 	var create: ViewControllerAction
 	var setupChild: SetupChildrenAction
 	
+	init(create: ViewControllerAction, setupChild: SetupChildrenAction? = nil) {
+		self.create = create
+		let emptyAction: SetupChildrenAction = { Observable.just($0) }
+		self.setupChild = setupChild != nil ? setupChild! : emptyAction
+	}
+	
+	
+	// MARK: Utils
 	func createAction(install: SetupChildrenAction) -> ViewControllerAction {
 		return self.create
 					.flatMap(install)
@@ -55,31 +63,29 @@ public class Teleport: NSObject {
 	func update(oldState: NavigationState, state: NavigationState) {
 		guard oldState != state else { return }
 		
-		self.updateActions(window, oldState: oldState, state: state).subscribeNext {
+		self.updateActions(window.rootViewController, oldState: oldState, state: state).createAction {
+			Teleport.install(self.window, vc: $0)
+		}.subscribeNext {
 			_ in
-			
+			print("finished")
 		}
 	}
 	
-	func updateActions(window: UIWindow, oldState: NavigationState, state: NavigationState) -> ViewControllerAction {
-		let root = window.rootViewController
+	func updateActions(root: UIViewController?, oldState: NavigationState, state: NavigationState) -> ViewControllerInstall {
+		
 		switch (oldState, state) {
 			case (_ , .Empty):
 				guard let root = root else {
-					return Observable.error(NavigationError.EmptyViewController)
+					return ViewControllerInstall(create: Observable.error(NavigationError.EmptyViewController))
 				}
 				
-				return Observable.just(root)
+				return ViewControllerInstall(create: Observable.just(root))
 		
 			case (.Empty, _):
-				return self.loadView(state).createAction() {
-					Teleport.install(window, vc: $0)
-				}
-		
+				return self.loadView(state)
+			
 			case (.ViewController(let c1, let child1), .ViewController(let c2, let child2)) where c1 != c2:
-				return self.loadView(state).createAction() {
-					Teleport.install(window, vc: $0)
-				}
+				return self.loadView(state)
 		
 			case (.ViewController(let c1, let child1), .ViewController(let c2, let child2)) where child1 != child2:
 				// TODO: Implement this
@@ -100,19 +106,17 @@ public class Teleport: NSObject {
 						}
 					}
 					
-					return result
+					return ViewControllerInstall(create: result)
 				}
 		
 				// TODO: Implement this
 //				self.updateActions(<#T##window: UIWindow##UIWindow#>, oldState: oldChild, state: newChild)
-				return result
+				return ViewControllerInstall(create: result)
 			
 			case (.NavigationController(let states1), .NavigationController(let states2)):
 				// TODO: Implement this
 				guard let navC = root as? UINavigationController else {
-					return self.loadView(state).createAction {
-						Teleport.install(window, vc: $0)
-					}
+					return self.loadView(state)
 				}
 				
 				let (common, new) = Teleport.commonSubsequence(states1, states: states2)
@@ -122,7 +126,7 @@ public class Teleport: NSObject {
 				let results = installs.map { $0.create }
 				let setupChildren = installs.map { $0.setupChild }
 				
-				return results // [Observable<UIViewController>]
+				return ViewControllerInstall(create: results // [Observable<UIViewController>]
 						.toObservable() // Observable<[Observable<UIViewController>]>
 						.merge() // Observable<UIViewController>
 						.toArray() // Observable<[UIViewController]>
@@ -138,15 +142,13 @@ public class Teleport: NSObject {
 								.map { vcs in
 									return navC
 								}
-						}
+						})
 			
 			case (.ViewController, .NavigationController), (.NavigationController, .ViewController):
-				return self.loadView(state).createAction() {
-					Teleport.install(window, vc: $0)
-				}
+				return self.loadView(state)
 			
 			default:
-				return Observable.just(root!)
+				return ViewControllerInstall(create: Observable.just(root!))
 		}
 	}
 
