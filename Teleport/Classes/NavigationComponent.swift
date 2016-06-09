@@ -45,8 +45,6 @@ public class NavigationComponent: NSObject {
 			_ in
 			
 		}
-		
-//		window.rootViewController = self.viewControllerForUpdate()
 	}
 	
 	func updateActions(window: UIWindow, oldState: NavigationState, state: NavigationState) -> Observable<UIViewController> {
@@ -63,13 +61,9 @@ public class NavigationComponent: NSObject {
 				let (result, setupChild) = self.loadView(state)
 				
 				return result
-				.flatMap { NavigationComponent.install(window, vc: $0) }
-				.flatMap(setupChild)
+					.flatMap { NavigationComponent.install(window, vc: $0) }
+					.flatMap(setupChild)
 			
-//				return self.loadView(state).flatMap { vc in
-//					return NavigationComponent.install(window, vc: vc)
-//				}
-		
 			case (.ViewController(let c1, let child1), .ViewController(let c2, let child2)) where c1 != c2:
 				let (result, setupChild) = self.loadView(state)
 				
@@ -100,22 +94,6 @@ public class NavigationComponent: NSObject {
 							NavigationComponent.present(mainVC, vc: $0)
 						}
 					}
-				
-					/*result = result.flatMap { mainVC in
-						let (result, setupChild) = self.loadView(child2)
-						
-						return self.installVC(result, setupChildren: setupChild) {
-							NavigationComponent.present(mainVC, vc: $0)
-						}
-						
-//						return result
-//							.flatMap {
-//								NavigationComponent.present(mainVC, vc: $0)
-//							}
-//							.flatMap(setupChild)
-					}*/
-						
-//					root?.presentViewController(childVC, animated: true, completion: nil)
 				}
 				
 				return result
@@ -128,14 +106,6 @@ public class NavigationComponent: NSObject {
 					return self.installVC(result, setupChildren: setupChild) {
 						NavigationComponent.install(window, vc: $0)
 					}
-
-//					result
-//					.flatMap { NavigationComponent.install(window, vc: $0) }
-//					.flatMap(setupChild)
-
-//					return self.loadView(state).flatMap { vc in
-//						NavigationComponent.install(window, vc: vc)
-//					}
 				}
 				
 				let (common, new) = NavigationComponent.commonSubsequence(states1, states: states2)
@@ -162,60 +132,6 @@ public class NavigationComponent: NSObject {
 									return navC
 								}
 						}
-			
-			
-//						.map { vcs in
-//							return navC
-//						}
-			
-
-//						.map { _ in
-//							return navC
-//						}
-			
-			
-			
-
-				
-//				return results.flatMap {
-//					.toObservable()
-//					.merge()
-//					.toArray()
-//					.flatMap { vcs in
-//						NavigationComponent.replace(navC, with: vcs, animated: true)
-//					}
-//					.flatMap { navC in
-//						setupChildren.map { $0(navC) }.toObservable()
-//						.merge()
-//						.toArray()
-//					}
-//				}
-			
-//				return newViews.concat()
-//				.flatMap {
-//					newViews in
-//					
-//					let commonViews = Array(navC.viewControllers.prefix(common.count))
-//					return NavigationComponent.replace(navC, with: commonViews + newViews)
-//				}
-
-				
-//				if common.count == navC.viewControllers.count {
-//					// Only push
-//					
-//					
-//					navC.pushViewControllers(newViews, animated: true)
-//				}
-//				else {
-//				
-//					navC.setViewControllers(commonViews + newViews, animated: true)
-//				}
-			
-			
-			
-//				return self.loadView(state).flatMap {
-//					NavigationComponent.install(window, vc: $0)
-//				}
 			
 			case (.ViewController, .NavigationController), (.NavigationController, .ViewController):
 				let (result, setupChild) = self.loadView(state)
@@ -255,15 +171,6 @@ public class NavigationComponent: NSObject {
 						}
 						.flatMap(setupDesc)
 					}
-				
-					// FIXME: This can't be done at this point
-//					return result.flatMap { vc in
-//						
-//					
-//						self.loadView(child).flatMap {
-//							NavigationComponent.present(vc, vc: $0, animated: true)
-//						}
-//					}
 				}
 				else {
 					setupChild = { Observable.just($0) }
@@ -296,31 +203,12 @@ public class NavigationComponent: NSObject {
 				let setupChild: (UIViewController) -> Observable<UIViewController> = {
 					vc in
 					
-					
 					setupChildren.map { $0(navC) }.toObservable()
 						.merge()
 						.toArray()
 						.map { _ in
 							navC
 						}
-					
-				
-//					return results
-//						.toObservable()
-//						.merge()
-//						.toArray()
-//						.flatMap { vcs in
-//							NavigationComponent.replace(navC as! UINavigationController, with: vcs, animated: false)
-//						}
-//						.flatMap { navC in
-//							setupChildren.map { $0(navC) }.toObservable()
-//							.merge()
-//							.toArray()
-//							.map { _ in
-//								navC
-//							}
-//						}
-					
 				}
 			
 				return (result, setupChild)

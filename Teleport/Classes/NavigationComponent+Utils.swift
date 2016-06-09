@@ -19,8 +19,12 @@ extension NavigationComponent {
 		
 			print("install")
 			window.rootViewController = vc
+
 			
-			observer.onNext(vc)
+			delay(0.01) {
+				observer.onNext(vc)
+			}
+
 		
 			return AnonymousDisposable {}
 		}

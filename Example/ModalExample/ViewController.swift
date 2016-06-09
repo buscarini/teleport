@@ -24,6 +24,12 @@ class ViewController: UIViewController {
 				child: .NavigationController([.ViewController(ViewController2.self, child: nil)])
 			)
 		)
+		
+//		delegate.navigate(
+//			.ViewController(ViewController.self,
+//				child: .ViewController(ViewController2.self, child: nil)
+//			)
+//		)
 	}
 }
 
