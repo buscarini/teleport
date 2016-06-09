@@ -20,12 +20,11 @@ extension NavigationComponent {
 			print("install")
 			window.rootViewController = vc
 
-			
+			// Required to avoid unbalanced transition calls
 			delay(0.01) {
 				observer.onNext(vc)
 			}
 
-		
 			return AnonymousDisposable {}
 		}
 	}

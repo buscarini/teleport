@@ -87,7 +87,7 @@ public class NavigationComponent: NSObject {
 				
 				if let child2 = child2 {
 				
-					let blah: Observable<UIViewController> = result.flatMap { mainVC -> Observable<UIViewController> in
+					result = result.flatMap { mainVC -> Observable<UIViewController> in
 						let (result, setupChild) = self.loadView(child2)
 						
 						return self.installVC(result, setupChildren: setupChild) {
