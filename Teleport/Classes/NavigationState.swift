@@ -46,3 +46,27 @@ public func == (lhs: NavigationState, rhs: NavigationState) -> Bool {
 }
 
 
+// MARK: Utils
+extension NavigationState {
+	static func sameRootView(state1: NavigationState?, state2: NavigationState?) -> Bool {
+		guard let state1 = state1, state2 = state2 else {
+			return false
+		}
+	
+		switch (state1, state2) {
+			case (.Empty, .Empty):
+				return true
+			
+			case (.ViewController(let c1, _), .ViewController(let c2, _)) where TypeUtils.name(c1) == TypeUtils.name(c2):
+				return true
+			
+			case (.NavigationController, .NavigationController):
+				return true
+			
+			default:
+				return false
+		}
+	}
+}
+
+
