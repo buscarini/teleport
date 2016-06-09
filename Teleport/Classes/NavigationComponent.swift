@@ -275,31 +275,51 @@ public class NavigationComponent: NSObject {
 			
 				let navC = UINavigationController()
 				navC.delegate = self
-				let result: Observable<UIViewController> = Observable.just(navC)
+
+
+				let tuples = states.map(self.loadView)
+				let results = tuples.map { (result, _) in return result }
+				let setupChildren = tuples.map { (_, setupChild) in return setupChild }
 				
-				let setupChild: (UIViewController) -> Observable<UIViewController> = {
+				let result: Observable<UIViewController> = Observable.just(navC).flatMap {
 					vc in
 					
-					let tuples = states.map(self.loadView)
-					
-					let results = tuples.map { (result, _) in return result }
-					let setupChildren = tuples.map { (_, setupChild) in return setupChild }
-				
 					return results
 						.toObservable()
 						.merge()
 						.toArray()
 						.flatMap { vcs in
-							NavigationComponent.replace(navC as! UINavigationController, with: vcs, animated: true)
+							NavigationComponent.replace(navC as! UINavigationController, with: vcs, animated: false)
 						}
-						.flatMap { navC in
-							setupChildren.map { $0(navC) }.toObservable()
-							.merge()
-							.toArray()
-							.map { _ in
-								navC
-							}
+				}
+				
+				let setupChild: (UIViewController) -> Observable<UIViewController> = {
+					vc in
+					
+					
+					setupChildren.map { $0(navC) }.toObservable()
+						.merge()
+						.toArray()
+						.map { _ in
+							navC
 						}
+					
+				
+//					return results
+//						.toObservable()
+//						.merge()
+//						.toArray()
+//						.flatMap { vcs in
+//							NavigationComponent.replace(navC as! UINavigationController, with: vcs, animated: false)
+//						}
+//						.flatMap { navC in
+//							setupChildren.map { $0(navC) }.toObservable()
+//							.merge()
+//							.toArray()
+//							.map { _ in
+//								navC
+//							}
+//						}
 					
 				}
 			

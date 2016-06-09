@@ -14,6 +14,17 @@ public indirect enum NavigationState {
 	case Empty
 	case ViewController(AnyClass, child: NavigationState?)
 	case NavigationController([NavigationState])
+	
+	var description: String {
+		switch self {
+			case .Empty:
+				return "Empty"
+			case .ViewController(let c, let child):
+				return "VC\n\t(\(TypeUtils.name(c)), child: \(child))"
+			case .NavigationController(let states):
+				return "NAVC\n\t(states: \(states))"
+		}
+	}
 }
 
 extension NavigationState: Hashable {
