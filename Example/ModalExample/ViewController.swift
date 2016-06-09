@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Teleport
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -19,12 +21,35 @@ class ViewController: UIViewController {
 
 	@IBAction func goto2(sender: AnyObject?) {
 		let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
-		delegate.navigate(
-			.ViewController(ViewController.self,
-				child: .NavigationController([.ViewController(ViewController2.self, child: nil)])
-			)
+
+		delegate.navigate(ViewController.complexNavigation())
+	}
+	
+	static func nextState() -> NavigationState {
+		return navCInModal()
+	}
+	
+	static func navCInModal() -> NavigationState {
+		return .ViewController(ViewController.self,
+			child: .NavigationController([.ViewController(ViewController2.self, child: nil)])
 		)
 	}
+	
+	static func complexNavigation() -> NavigationState {
+		return .ViewController(ViewController.self,
+			child: .NavigationController([
+				.ViewController(ViewController2.self, child: nil),
+				.ViewController(ViewController.self, child: .ViewController(ViewController.self,
+						child: .NavigationController([
+								.ViewController(ViewController2.self, child: nil)
+							]
+						)
+					)
+				)
+			])
+		)
+	}
+	
 }
 
 
