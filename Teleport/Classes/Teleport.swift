@@ -109,9 +109,11 @@ public class Teleport: NSObject {
 					return ViewControllerInstall(create: result)
 				}
 		
+		
+				return self.updateActions(root?.presentedViewController, oldState: oldChild, state: newChild)
 				// TODO: Implement this
 //				self.updateActions(<#T##window: UIWindow##UIWindow#>, oldState: oldChild, state: newChild)
-				return ViewControllerInstall(create: result)
+//				return ViewControllerInstall(create: result)
 			
 			case (.NavigationController(let states1), .NavigationController(let states2)):
 				// TODO: Implement this
