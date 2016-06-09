@@ -67,4 +67,12 @@ extension Teleport {
 		}
 		
 	}
+	
+	static func root(window: UIWindow) -> UIViewController? {
+		guard let rootVC = window.rootViewController else {
+			return nil
+		}
+		
+		return rootVC.presentingViewController ?? rootVC
+	}
 }

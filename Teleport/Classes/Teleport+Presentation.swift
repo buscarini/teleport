@@ -15,6 +15,10 @@ extension Teleport {
 // MARK: Window Root
 	static func install(window: UIWindow, vc: UIViewController, animated: Bool = true) -> ViewControllerAction {
 		return Observable.create { observer in
+			guard Teleport.root(window) != vc else {
+				observer.onNext(vc)
+				return AnonymousDisposable {}
+			}
 		
 			print("install")
 			window.rootViewController = vc

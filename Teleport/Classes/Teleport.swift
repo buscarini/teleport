@@ -42,7 +42,11 @@ struct ViewControllerInstall {
 public class Teleport: NSObject {
 	let window: UIWindow
 	
-	private var currentState: NavigationState
+	private var currentState: NavigationState {
+		didSet {
+			print("\(currentState)")
+		}
+	}
 	
 	public var state: NavigationState {
 		get {
@@ -63,7 +67,7 @@ public class Teleport: NSObject {
 	func update(oldState: NavigationState, state: NavigationState) {
 		guard oldState != state else { return }
 		
-		self.updateActions(window.rootViewController, oldState: oldState, state: state).createAction {
+		self.updateActions(Teleport.root(window), oldState: oldState, state: state).createAction {
 			Teleport.install(self.window, vc: $0)
 		}.subscribeNext {
 			_ in
@@ -235,7 +239,7 @@ extension Teleport: UINavigationControllerDelegate {
 	public func navigationController(_ navigationController: UINavigationController, didShowViewController viewController: UIViewController, animated animated: Bool) {
 	
 		// TODO: Implement this
-		guard let rootVC = window.rootViewController else {
+		guard let rootVC = Teleport.root(window) else {
 			return
 		}
 		
