@@ -11,7 +11,7 @@ import UIKit
 import RxSwift
 import Miscel
 
-extension NavigationComponent {
+extension Teleport {
 
 	// MARK: Window Root
 	static func install(window: UIWindow, vc: UIViewController, animated: Bool = true) -> Observable<UIViewController> {

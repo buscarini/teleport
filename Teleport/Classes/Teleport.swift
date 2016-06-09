@@ -17,7 +17,7 @@ enum NavigationError: ErrorType {
 	case Unknown
 }
 
-public class NavigationComponent: NSObject {
+public class Teleport: NSObject {
 	let window: UIWindow
 	
 	private var currentState: NavigationState
@@ -61,14 +61,14 @@ public class NavigationComponent: NSObject {
 				let (result, setupChild) = self.loadView(state)
 				
 				return result
-					.flatMap { NavigationComponent.install(window, vc: $0) }
+					.flatMap { Teleport.install(window, vc: $0) }
 					.flatMap(setupChild)
 			
 			case (.ViewController(let c1, let child1), .ViewController(let c2, let child2)) where c1 != c2:
 				let (result, setupChild) = self.loadView(state)
 				
 				return self.installVC(result, setupChildren: setupChild) {
-					NavigationComponent.install(window, vc: $0)
+					Teleport.install(window, vc: $0)
 				}
 				
 //				result
@@ -81,7 +81,7 @@ public class NavigationComponent: NSObject {
 				
 				if let child1 = child1 {
 					result = result.flatMap {
-						return NavigationComponent.dismiss($0, vc: $0)
+						return Teleport.dismiss($0, vc: $0)
 					}
 				}
 				
@@ -91,7 +91,7 @@ public class NavigationComponent: NSObject {
 						let (result, setupChild) = self.loadView(child2)
 						
 						return self.installVC(result, setupChildren: setupChild) {
-							NavigationComponent.present(mainVC, vc: $0)
+							Teleport.present(mainVC, vc: $0)
 						}
 					}
 				}
@@ -104,11 +104,11 @@ public class NavigationComponent: NSObject {
 					let (result, setupChild) = self.loadView(state)
 					
 					return self.installVC(result, setupChildren: setupChild) {
-						NavigationComponent.install(window, vc: $0)
+						Teleport.install(window, vc: $0)
 					}
 				}
 				
-				let (common, new) = NavigationComponent.commonSubsequence(states1, states: states2)
+				let (common, new) = Teleport.commonSubsequence(states1, states: states2)
 				
 				let tuples = new.map(self.loadView)
 					
@@ -121,7 +121,7 @@ public class NavigationComponent: NSObject {
 						.toArray() // Observable<[UIViewController]>
 						.flatMap { vcs -> Observable<UIViewController> in
 							let commonViews = Array(navC.viewControllers.prefix(common.count))
-							return NavigationComponent.replace(navC as! UINavigationController, with: commonViews + vcs, animated: true)
+							return Teleport.replace(navC as! UINavigationController, with: commonViews + vcs, animated: true)
 						}  // Observable<UIViewController>
 						.flatMap { navC in
 							return setupChildren.flatMap { $0(navC) }
@@ -137,7 +137,7 @@ public class NavigationComponent: NSObject {
 				let (result, setupChild) = self.loadView(state)
 				
 				return self.installVC(result, setupChildren: setupChild) {
-					NavigationComponent.install(window, vc: $0)
+					Teleport.install(window, vc: $0)
 				}
 			
 			default:
@@ -167,7 +167,7 @@ public class NavigationComponent: NSObject {
 						let (childResult, setupDesc) = self.loadView(child)
 						return childResult
 						.flatMap {
-							NavigationComponent.present(vc, vc: $0, animated: true)
+							Teleport.present(vc, vc: $0, animated: true)
 						}
 						.flatMap(setupDesc)
 					}
@@ -196,7 +196,7 @@ public class NavigationComponent: NSObject {
 						.merge()
 						.toArray()
 						.flatMap { vcs in
-							NavigationComponent.replace(navC as! UINavigationController, with: vcs, animated: false)
+							Teleport.replace(navC as! UINavigationController, with: vcs, animated: false)
 						}
 				}
 				
@@ -278,7 +278,7 @@ public class NavigationComponent: NSObject {
 }
 
 
-extension NavigationComponent: UINavigationControllerDelegate {
+extension Teleport: UINavigationControllerDelegate {
 	public func navigationController(_ navigationController: UINavigationController, didShowViewController viewController: UIViewController, animated animated: Bool) {
 	
 		// TODO: Implement this
@@ -287,7 +287,7 @@ extension NavigationComponent: UINavigationControllerDelegate {
 		}
 		
 		// TODO: Update state without side effects
-		self.currentState = NavigationComponent.changeSubState(forViewController: navigationController, rootVC: rootVC, rootState: self.state) {
+		self.currentState = Teleport.changeSubState(forViewController: navigationController, rootVC: rootVC, rootState: self.state) {
 			substate in
 			
 			switch substate {

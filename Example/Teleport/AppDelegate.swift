@@ -15,12 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-	var component: NavigationComponent!
+	var component: Teleport!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-		component = NavigationComponent(window: window!, initialState: .Empty)
+		component = Teleport(window: window!, initialState: .Empty)
 		
 		self.navigate(.NavigationController([.ViewController(ViewController.self, child: nil)]))
 

@@ -94,7 +94,7 @@
 		37F4C7846D60804D56012051AB0ED7E4 /* Using.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0C5B16EFF65262D6D36AB3F5CCF6A /* Using.swift */; };
 		38544EFD49D628114443B16B2B9264D0 /* ObserverBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290891B9EF01DDB9688C75C82491187 /* ObserverBase.swift */; };
 		39198BDF62780C9078A1B21E2B9E7BC3 /* DistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FF9CDFB99AFB7E474629C8E4DE4523 /* DistinctUntilChanged.swift */; };
-		3A0FEA0F12A300D8DCD6996A74DBD42B /* NavigationComponent+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35096472C63BB2418BCB6BDC53DC498A /* NavigationComponent+Utils.swift */; };
+		3A0FEA0F12A300D8DCD6996A74DBD42B /* Teleport+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35096472C63BB2418BCB6BDC53DC498A /* Teleport+Utils.swift */; };
 		3A16EC32986085708D6C199545B70D1F /* UIStoryboard+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7476DC7DB4BDF7C54C1A2A9B340B104 /* UIStoryboard+Utils.swift */; };
 		3B28DA4026AF57FF1FF2A09CF79F5B43 /* VirtualTimeScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A848A41EDDF9730BFC68907938C0C353 /* VirtualTimeScheduler.swift */; };
 		3B5891F811B1545E8EF3EA8E20889899 /* VirtualTimeConverterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020E18E02B5F3CA35E49BFB7CCA88207 /* VirtualTimeConverterType.swift */; };
@@ -109,7 +109,7 @@
 		3F3521D047336E38245BEFB8BFD3838D /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9779F6776803A5D42C9358438D459CA4 /* SerialDispatchQueueScheduler.swift */; };
 		407093423464FE41A2A8B20D96E94E42 /* SingleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD36D3A8A11627BC11825A7AB14D7C88 /* SingleAsync.swift */; };
 		4072AB9C86B810C7DCBEC8E1814A5346 /* VirtualTimeConverterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020E18E02B5F3CA35E49BFB7CCA88207 /* VirtualTimeConverterType.swift */; };
-		40F90B70411C12413FB83EC22E7B9A28 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2389A99A152243CC089B5228B48AD27 /* NavigationComponent.swift */; };
+		40F90B70411C12413FB83EC22E7B9A28 /* Teleport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2389A99A152243CC089B5228B48AD27 /* Teleport.swift */; };
 		4138B40EA21507A5471B2AA691127384 /* SequenceType+Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B7240734B3030962B8ECA9F6920A3 /* SequenceType+Take.swift */; };
 		417F5F177CED9B8C62F67C0015181955 /* WithLatestFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDBD9A59C7FB96BA99B76FC6456A215 /* WithLatestFrom.swift */; };
 		41D0201ECA5B03C570C59F4CF1CCC18E /* BinaryDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD2A6746596F7B0FD52946B409B7BB /* BinaryDisposable.swift */; };
@@ -118,7 +118,7 @@
 		426C3C9491EDDA85CD9A092C5CE7B7FF /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA856650998CE0B9998F0BD48732897 /* Monoid.swift */; };
 		44059C3AF53091529C2DC4A8B9387E65 /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DC5F9D70CAD7657EE035A74B4FE84 /* NopDisposable.swift */; };
 		443EFBF9E03436131F345CC80A910CAA /* Skip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF9F75CC1B7613F24FD7574796F76BC /* Skip.swift */; };
-		445B10E09B0F8D01EF7A1C147F3BDA67 /* NavigationComponent+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35096472C63BB2418BCB6BDC53DC498A /* NavigationComponent+Utils.swift */; };
+		445B10E09B0F8D01EF7A1C147F3BDA67 /* Teleport+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35096472C63BB2418BCB6BDC53DC498A /* Teleport+Utils.swift */; };
 		45127872AAC59491CBF2F0A0FCD08C80 /* Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB14E5F5114D7E03DC3D9BFBCD6DD15 /* Take.swift */; };
 		45145CE86512259555A4B18B2D7AF352 /* Zip+CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C9B1E14D98737C136CBED741B32C5 /* Zip+CollectionType.swift */; };
 		45A7DF4D81E9B792EBF040164B3290AB /* TailRecursiveSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E14C9F0A50544CD417C19A96D4495 /* TailRecursiveSink.swift */; };
@@ -382,7 +382,7 @@
 		F193ABA3E6576DA9509FE259E9C154DF /* SkipWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946F212A2929C442C179B10DDA21604 /* SkipWhile.swift */; };
 		F3811F957F0F5C83283BE4AAD8CA43C2 /* ConnectableObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6069D249C4852A29D18C761A496CE168 /* ConnectableObservableType.swift */; };
 		F3844B3647353F753C8EBE58C3A7609F /* Teleport-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4793A0DAF54350C22F060B8EEE0049C /* Teleport-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F41D02146284ED810CB3CA6E9A67C9D8 /* NavigationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2389A99A152243CC089B5228B48AD27 /* NavigationComponent.swift */; };
+		F41D02146284ED810CB3CA6E9A67C9D8 /* Teleport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2389A99A152243CC089B5228B48AD27 /* Teleport.swift */; };
 		F47FAFF0412788A0162E0BFD93B74C3A /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05402C876D1D86C1C902D6707EAD9775 /* Scan.swift */; };
 		F490BB78A3C6980E0798FABDFE1609C6 /* RetryWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C471832834AD63B0ED19072FF186FBC /* RetryWhen.swift */; };
 		F4EE9A444FD6B415E5487926725BB7FB /* Observable+Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC0BA74ADB14C3F85D0AAFD8D231FC /* Observable+Concurrency.swift */; };
@@ -577,7 +577,7 @@
 		31E8DAB3F597C6AC518A37007FB5CC82 /* Miscel-iOS9.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Miscel-iOS9.3.modulemap"; path = "../Miscel-iOS9.3/Miscel-iOS9.3.modulemap"; sourceTree = "<group>"; };
 		3334BC4D36BE3CAC83A8BF94E01E9564 /* NSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
 		344F8EF9B635F0940C4F698322FED678 /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = RxSwift/DataStructures/Queue.swift; sourceTree = "<group>"; };
-		35096472C63BB2418BCB6BDC53DC498A /* NavigationComponent+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NavigationComponent+Utils.swift"; sourceTree = "<group>"; };
+		35096472C63BB2418BCB6BDC53DC498A /* Teleport+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Teleport+Utils.swift"; sourceTree = "<group>"; };
 		36D424836098FF3513C0C461DE08F949 /* Pods_Teleport_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		370701CE74829F4F41441FC3300F4C9E /* Pods-Teleport_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Teleport_Tests.modulemap"; sourceTree = "<group>"; };
 		386AD453BB01EE053013CC5D6DB748B9 /* Pods-Teleport_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Teleport_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -768,7 +768,7 @@
 		EE7BFF1FE452481CCF4C597A2F0E2D04 /* Repeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeat.swift; path = RxSwift/Observables/Implementations/Repeat.swift; sourceTree = "<group>"; };
 		EEE3DE078835E88F787FC1C225D69331 /* AddRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddRef.swift; path = RxSwift/Observables/Implementations/AddRef.swift; sourceTree = "<group>"; };
 		EF10D1285DF39AADD233D65065DAC9BD /* SynchronizedOnType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedOnType.swift; path = RxSwift/Concurrency/SynchronizedOnType.swift; sourceTree = "<group>"; };
-		F2389A99A152243CC089B5228B48AD27 /* NavigationComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationComponent.swift; sourceTree = "<group>"; };
+		F2389A99A152243CC089B5228B48AD27 /* Teleport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Teleport.swift; sourceTree = "<group>"; };
 		F25DD82AE6BF2EF2E4D36C6A0FF1627D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Layitout-iOS9.3/Info.plist"; sourceTree = "<group>"; };
 		F2798CAF263B1D29FA8E6098E2A6829D /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = RxSwift/Observable.swift; sourceTree = "<group>"; };
 		F2A4F5F42CC166046EA3B074B1389B83 /* Switch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = RxSwift/Observables/Implementations/Switch.swift; sourceTree = "<group>"; };
@@ -1258,8 +1258,8 @@
 		E84911FC155095A0EB5CD509A26A592F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F2389A99A152243CC089B5228B48AD27 /* NavigationComponent.swift */,
-				35096472C63BB2418BCB6BDC53DC498A /* NavigationComponent+Utils.swift */,
+				F2389A99A152243CC089B5228B48AD27 /* Teleport.swift */,
+				35096472C63BB2418BCB6BDC53DC498A /* Teleport+Utils.swift */,
 				FD76AFACE2D06A4B8FA3C2A3D8A612B6 /* NavigationState.swift */,
 				29BA6DD4A826CC8EE99F8675EF75E547 /* Utils */,
 			);
@@ -2123,8 +2123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				445B10E09B0F8D01EF7A1C147F3BDA67 /* NavigationComponent+Utils.swift in Sources */,
-				F41D02146284ED810CB3CA6E9A67C9D8 /* NavigationComponent.swift in Sources */,
+				445B10E09B0F8D01EF7A1C147F3BDA67 /* Teleport+Utils.swift in Sources */,
+				F41D02146284ED810CB3CA6E9A67C9D8 /* Teleport.swift in Sources */,
 				00CDC429A4E4FCE8D16476A8FB51E331 /* NavigationState.swift in Sources */,
 				D892F5D424DBC82BA238D565EA8D421B /* Teleport-iOS9.3-dummy.m in Sources */,
 				EACDCCA563BA9D6EAC8AEB83B64B88DE /* UINavigationController+Utils.swift in Sources */,
@@ -2192,8 +2192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0FEA0F12A300D8DCD6996A74DBD42B /* NavigationComponent+Utils.swift in Sources */,
-				40F90B70411C12413FB83EC22E7B9A28 /* NavigationComponent.swift in Sources */,
+				3A0FEA0F12A300D8DCD6996A74DBD42B /* Teleport+Utils.swift in Sources */,
+				40F90B70411C12413FB83EC22E7B9A28 /* Teleport.swift in Sources */,
 				B2A129D3572BDBE7000D0C4B10DA18A5 /* NavigationState.swift in Sources */,
 				5882E12AD3F05C59EA3CE928A6B4E470 /* Teleport-iOS8.3-dummy.m in Sources */,
 				B5634D50C3C744311DFEDBA944294B79 /* UINavigationController+Utils.swift in Sources */,
