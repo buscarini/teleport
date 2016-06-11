@@ -39,8 +39,10 @@ class ViewController: UIViewController {
 		return .ViewController(ViewController.self,
 			child: .NavigationController([
 				.ViewController(ViewController2.self, child: nil),
-				.ViewController(ViewController.self, child: .ViewController(ViewController.self,
-						child: .NavigationController([
+				.ViewController(ViewController.self, child:
+					.ViewController(ViewController.self,
+						child:
+							.NavigationController([
 								.ViewController(ViewController2.self, child: nil)
 							]
 						)

@@ -42,11 +42,7 @@ struct ViewControllerInstall {
 public class Teleport: NSObject {
 	let window: UIWindow
 	
-	private var currentState: NavigationState {
-		didSet {
-			print("\(currentState)")
-		}
-	}
+	private var currentState: NavigationState
 	
 	public var state: NavigationState {
 		get {
