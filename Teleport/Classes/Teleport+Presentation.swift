@@ -26,6 +26,7 @@ extension Teleport {
 			// Required to avoid unbalanced transition calls
 			delay(0.01) {
 				observer.onNext(vc)
+				observer.onCompleted()
 			}
 
 			return AnonymousDisposable {}
@@ -38,6 +39,7 @@ extension Teleport {
 			print("present")
 			from.presentViewController(vc, animated: animated) {
 				observer.onNext(from)
+				observer.onCompleted()
 			}
 		
 			return AnonymousDisposable {}
@@ -50,6 +52,7 @@ extension Teleport {
 			print("dismiss")
 			vc.dismissViewControllerAnimated(animated) {
 				observer.onNext(from)
+				observer.onCompleted()
 			}
 		
 			return AnonymousDisposable {}
@@ -62,6 +65,7 @@ extension Teleport {
 			print("push")
 			from.pushViewController(vc, animated: animated) {
 				observer.onNext(from)
+				observer.onCompleted()
 			}
 		
 			return AnonymousDisposable {}
@@ -74,6 +78,7 @@ extension Teleport {
 			print("pop")
 			from.popViewController(animated) {
 				observer.onNext(from)
+				observer.onCompleted()
 			}
 		
 			return AnonymousDisposable {}
@@ -82,12 +87,59 @@ extension Teleport {
 	
 	static func replace(from: UINavigationController, with: [UIViewController], animated: Bool = true) -> ViewControllerAction {
 		return Observable.create { observer in
-			print("replace")
+			
+			print("replace in navc")
+			
 			from.replaceViewControllers(with, animated: animated) {
 				observer.onNext(from)
+				observer.onCompleted()
 			}
 		
 			return AnonymousDisposable {}
 		}
 	}
+	
+	// MARK: Tab Bar
+	static func replace(from: UITabBarController, with: [UIViewController], animated: Bool = true) -> ViewControllerAction {
+		return Observable.create { observer in
+			
+			print("replace in tab")
+			
+			from.replaceViewControllers(with, animated: animated) {
+				observer.onNext(from)
+				observer.onCompleted()
+			}
+		
+			return AnonymousDisposable {}
+		}
+	}
+	
+	static func select(from: UITabBarController, vc: UIViewController) -> ViewControllerAction {
+		return Observable.create { observer in
+			
+			print("select in tab")
+			
+			from.selectedViewController = vc
+			observer.onNext(from)
+			observer.onCompleted()
+			
+			return AnonymousDisposable {}
+		}
+	}
+	
+	static func select(from: UITabBarController, index: Int) -> ViewControllerAction {
+		return Observable.create { observer in
+			
+			print("select in tab")
+			
+			from.selectedIndex = index
+			observer.onNext(from)
+			observer.onCompleted()
+			
+			return AnonymousDisposable {}
+		}
+	}
+	
 }
+
+

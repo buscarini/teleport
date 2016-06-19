@@ -14,6 +14,7 @@ public indirect enum NavigationState {
 	case Empty
 	case ViewController(AnyClass, child: NavigationState?)
 	case NavigationController([NavigationState])
+	case TabBar([NavigationState], selected: Int)
 	
 	var description: String {
 		switch self {
@@ -23,6 +24,8 @@ public indirect enum NavigationState {
 				return "VC\n\t(\(TypeUtils.name(c)), child: \(child))"
 			case .NavigationController(let states):
 				return "NAVC\n\t(states: \(states))"
+			case .TabBar(let states, let selected):
+				return "TabBar\n\t(states: \(states), selected: \(selected))"
 		}
 	}
 }
@@ -36,6 +39,8 @@ extension NavigationState: Hashable {
 				return "ViewController(\(TypeUtils.name(viewClass).hashValue),\(child?.hashValue))".hashValue
 			case NavigationController(let states):
 				return "NavigationController(\(states.hashValue))".hashValue
+			case .TabBar(let states, let selectedIndex):
+				return "TabBar(\(states.hashValue),\(selectedIndex))".hashValue
 		}
     }
 }
@@ -61,6 +66,10 @@ extension NavigationState {
 				return true
 			
 			case (.NavigationController, .NavigationController):
+				return true
+			
+			case (.TabBar, .TabBar):
+				// TODO: Check this
 				return true
 			
 			default:

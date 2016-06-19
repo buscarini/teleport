@@ -13,6 +13,10 @@ target 'ModalExample' do
 	shared_pods
 end
 
+target 'TabBarExample' do
+	shared_pods
+end
+
 target 'Teleport_Example' do
 	shared_pods
 	
