@@ -33,8 +33,8 @@ class ViewController2: UIViewController {
 	
 	static func tabNavigation() -> NavigationState {
 		return .TabBar([
-			.ViewController(ViewController.self, child: nil),
-			.ViewController(ViewController2.self, child: nil)
+			.NavigationController([.ViewController(ViewController.self, child: nil)]),
+			.NavigationController([.ViewController(ViewController2.self, child: nil)])
 			],
 			selected: 0
 		)

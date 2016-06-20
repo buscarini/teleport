@@ -179,6 +179,9 @@ public class Teleport: NSObject {
 							let commonViews = Array(controllers.prefix(common.count))
 							return Teleport.replace(tabBarC as! UITabBarController, with: commonViews + vcs, animated: true)
 						}  // Observable<UIViewController>
+						.flatMap { _ in
+							return Teleport.select(tabBarC as! UITabBarController, index: selected2)
+						}
 						.flatMap { navC in
 							return setupChildren.flatMap { $0(tabBarC) }
 								.toObservable()
